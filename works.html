@@ -54,61 +54,38 @@
             text-align: justify;
             line-height: 1.75;
         }
-    <style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* First row: 3 items */
-        gap: 20px;
-        justify-content: center;
-    }
 
-    .grid-item {
-        text-align: center;
-    }
-
-    .grid-item img, .grid-item video {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        border-radius: 5px;
-    }
-
-    /* Second row: Only two items */
-    .grid-container div:nth-child(4),
-    .grid-container div:nth-child(5) {
-        grid-column: span 1; 
-    }
-
-    /* Third row: Full width for the video */
-    .grid-item.full-width {
-        grid-column: 1 / -1; /* Makes it span the entire row */
-        text-align: center;
-    }
-}
-
-.grid-item {
-    text-align: center;
-}
-
-.grid-item img, .grid-item video {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.full-width {
-    grid-column: 1 / -1;
-}
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-content: center;
         }
+
+        /* Second row: Only 2 items centered */
+        .grid-container div:nth-child(4),
+        .grid-container div:nth-child(5) {
+            grid-column: span 1;
+        }
+
+        /* Last row: Full width */
+        .grid-item.full-width {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
         .grid-item {
             text-align: center;
         }
-        .grid-item img {
+
+        .grid-item img, .grid-item video {
             width: 100%;
             max-width: 300px;
             height: auto;
             border-radius: 5px;
         }
+
         .grid-item a {
             display: block;
             margin-top: 5px;
@@ -116,6 +93,7 @@
             font-weight: bold;
             color: #000;
         }
+
         .footer {
             padding: 8px;
             background-color: #e0e0e0;
@@ -141,7 +119,7 @@
     <h2>VQGAN Works</h2>
     <div class="grid-container">
 
-        <!-- Cognizance -->
+        <!-- Row 1: Three items -->
         <div class="grid-item">
             <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/3" target="_blank">
                 <img src="vqgan-media/cognizance.jpg" alt="Cognizance">
@@ -149,7 +127,6 @@
             <p><strong>Cognizance</strong> | Objkt</p>
         </div>
 
-        <!-- Veracity -->
         <div class="grid-item">
             <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/19" target="_blank">
                 <img src="vqgan-media/veracity.jpg" alt="Veracity">
@@ -157,7 +134,6 @@
             <p><strong>Veracity</strong> | Objkt</p>
         </div>
 
-        <!-- Quiet -->
         <div class="grid-item">
             <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/16" target="_blank">
                 <img src="vqgan-media/Quiet.jpg" alt="Quiet">
@@ -165,7 +141,7 @@
             <p><strong>Quiet</strong> | Objkt</p>
         </div>
 
-        <!-- Row: Interstellar Waterfall & City of the Future -->
+        <!-- Row 2: Two images centered -->
         <div class="grid-item">
             <a href="https://objkt.com/tokens/kalamint/80857" target="_blank">
                 <img src="vqgan-media/interstellar waterfall.jpg" alt="Interstellar Waterfall">
@@ -180,7 +156,7 @@
             <p><strong>City of the Future</strong> | Objkt</p>
         </div>
 
-        <!-- Row: Lost Elvin Sanctuary (MP4) by itself -->
+        <!-- Row 3: Full-width video -->
         <div class="grid-item full-width">
             <a href="https://objkt.com/tokens/KT1L1vnEsZdmV7X9NTu4od1BzA8YkodsnoA3/34" target="_blank">
                 <video autoplay loop muted playsinline>
@@ -193,3 +169,9 @@
 
     </div>
 </section>
+
+    <div class="footer">
+        <p>&copy; 2025 Josh Davila. All rights reserved.</p>
+    </div>
+</body>
+</html>

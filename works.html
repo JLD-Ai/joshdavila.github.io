@@ -74,10 +74,16 @@
             border-radius: 5px;
         }
 
-        /* Second row: Two larger images */
+        /* Second row: Two larger images, centered */
+        .grid-row-two {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
         .grid-item.large {
-            grid-column: span 1;
-            max-width: 450px;
+            flex: 0 1 45%; /* Each image takes 45% of the row width */
+            max-width: 500px;
         }
 
         /* Full-width last row */
@@ -139,7 +145,10 @@
             <p><strong>Quiet</strong> | Objkt</p>
         </div>
 
-        <!-- Row 2: Two larger images -->
+    </div>
+
+    <!-- Row 2: Two larger images, centered -->
+    <div class="grid-row-two">
         <div class="grid-item large">
             <a href="https://objkt.com/tokens/kalamint/80857" target="_blank">
                 <img src="vqgan-media/interstellar waterfall.jpg" alt="Interstellar Waterfall">
@@ -153,19 +162,19 @@
             </a>
             <p><strong>City of the Future</strong> | Objkt</p>
         </div>
-
-        <!-- Row 3: Full-width video -->
-        <div class="grid-item full-width">
-            <a href="https://objkt.com/tokens/KT1L1vnEsZdmV7X9NTu4od1BzA8YkodsnoA3/34" target="_blank">
-                <video autoplay loop muted playsinline>
-                    <source src="vqgan-media/elvin sanctuary.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </a>
-            <p><strong>Lost Elvin Sanctuary</strong> | Objkt</p>
-        </div>
-
     </div>
+
+    <!-- Row 3: Full-width video -->
+    <div class="grid-item full-width">
+        <a href="https://objkt.com/tokens/KT1L1vnEsZdmV7X9NTu4od1BzA8YkodsnoA3/34" target="_blank">
+            <video autoplay loop muted playsinline>
+                <source src="vqgan-media/elvin sanctuary.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </a>
+        <p><strong>Lost Elvin Sanctuary</strong> | Objkt</p>
+    </div>
+
 </section>
 
     <div class="footer">

@@ -63,35 +63,33 @@
             justify-content: center;
         }
 
-        /* Second row: Only 2 items centered */
-        .grid-container div:nth-child(4),
-        .grid-container div:nth-child(5) {
-            grid-column: span 1;
+        .grid-item {
+            text-align: center;
         }
 
-        /* Last row: Full width */
+        /* First row: Three equal images */
+        .grid-item img, .grid-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Second row: Two larger images */
+        .grid-item.large {
+            grid-column: span 1;
+            max-width: 450px;
+        }
+
+        /* Full-width last row */
         .grid-item.full-width {
             grid-column: 1 / -1;
             text-align: center;
         }
 
-        .grid-item {
-            text-align: center;
-        }
-
+        /* Ensuring images don’t exceed grid size */
         .grid-item img, .grid-item video {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
+            max-width: 100%;
             border-radius: 5px;
-        }
-
-        .grid-item a {
-            display: block;
-            margin-top: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #000;
         }
 
         .footer {
@@ -119,7 +117,7 @@
     <h2>VQGAN Works</h2>
     <div class="grid-container">
 
-        <!-- Row 1: Three items -->
+        <!-- Row 1: Three images -->
         <div class="grid-item">
             <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/3" target="_blank">
                 <img src="vqgan-media/cognizance.jpg" alt="Cognizance">
@@ -141,15 +139,15 @@
             <p><strong>Quiet</strong> | Objkt</p>
         </div>
 
-        <!-- Row 2: Two images centered -->
-        <div class="grid-item">
+        <!-- Row 2: Two larger images -->
+        <div class="grid-item large">
             <a href="https://objkt.com/tokens/kalamint/80857" target="_blank">
                 <img src="vqgan-media/interstellar waterfall.jpg" alt="Interstellar Waterfall">
             </a>
             <p><strong>Interstellar Waterfall</strong> | Objkt</p>
         </div>
 
-        <div class="grid-item">
+        <div class="grid-item large">
             <a href="https://objkt.com/tokens/kalamint/80682" target="_blank">
                 <img src="vqgan-media/city of the future.jpg" alt="City of the Future">
             </a>

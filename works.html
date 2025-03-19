@@ -54,11 +54,36 @@
             text-align: justify;
             line-height: 1.75;
         }
+    <style>
     .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* First row: 3 items */
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .grid-item {
+        text-align: center;
+    }
+
+    .grid-item img, .grid-item video {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    /* Second row: Only two items */
+    .grid-container div:nth-child(4),
+    .grid-container div:nth-child(5) {
+        grid-column: span 1; 
+    }
+
+    /* Third row: Full width for the video */
+    .grid-item.full-width {
+        grid-column: 1 / -1; /* Makes it span the entire row */
+        text-align: center;
+    }
 }
 
 .grid-item {

@@ -104,6 +104,10 @@
             font-size: 0.9em;
             text-align: center;
         }
+        .full-width {
+    grid-column: 1 / -1; /* This makes the item span the entire row */
+    text-align: center;
+}
     </style>
 </head>
 <body>
@@ -163,13 +167,6 @@
 </div>
 
 <div class="grid-item">
-    <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/1" target="_blank">
-        <img src="vqgan-media/defiance.jpg" alt="Act of Defiance">
-    </a>
-    <p><strong>Act of Defiance</strong> | Foundation</p>
-</div>
-
-<div class="grid-item">
     <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/8" target="_blank">
         <img src="vqgan-media/traditions.png" alt="Traditions">
     </a>
@@ -183,27 +180,35 @@
     <p><strong>Libel</strong> | Foundation</p>
 </div>
 
-        <!-- Row 1: Three images -->
-        <div class="grid-item">
-            <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/3" target="_blank">
-                <img src="vqgan-media/cognizance.jpg" alt="Cognizance">
-            </a>
-            <p><strong>Cognizance</strong> | Objkt</p>
-        </div>
+        <!-- Act of Defiance (Full Width) -->
+<div class="grid-item full-width">
+    <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/1" target="_blank">
+        <img src="vqgan-media/defiance.png" alt="Act of Defiance">
+    </a>
+    <p><strong>Act of Defiance</strong> | Foundation</p>
+</div>
 
-        <div class="grid-item">
-            <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/19" target="_blank">
-                <img src="vqgan-media/veracity.jpg" alt="Veracity">
-            </a>
-            <p><strong>Veracity</strong> | Objkt</p>
-        </div>
+<!-- Row: Veracity, Philosopher, Cognizance -->
+<div class="grid-item">
+    <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/19" target="_blank">
+        <img src="vqgan-media/veracity.jpg" alt="Veracity">
+    </a>
+    <p><strong>Veracity</strong> | Objkt</p>
+</div>
 
-        <div class="grid-item">
-            <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/14" target="_blank">
-                <img src="vqgan-media/philosopher.jpg" alt="Philosopher">
-            </a>
-            <p><strong>Philosopher</strong> | Objkt</p>
-        </div>
+<div class="grid-item">
+    <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/16" target="_blank">
+        <img src="vqgan-media/philosopher.jpg" alt="Philosopher">
+    </a>
+    <p><strong>Philosopher</strong> | Objkt</p>
+</div>
+
+<div class="grid-item">
+    <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/3" target="_blank">
+        <img src="vqgan-media/cognizance.jpg" alt="Cognizance">
+    </a>
+    <p><strong>Cognizance</strong> | Objkt</p>
+</div>
 
     </div>
 

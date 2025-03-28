@@ -89,6 +89,92 @@
             font-size: 0.9em;
             text-align: center;
         }
+        /* =============================
+   ✅ MOBILE FIXES (NAV & HEADER)
+   ============================= */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 12px;
+        padding: 10px;
+    }
+    .nav-links a {
+        font-size: 1em;
+        padding: 5px;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* =============================
+   ✅ HEADER & FONT SCALING
+   ============================= */
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 2.5em; /* Scale down header */
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+}
+
+/* =============================
+   ✅ IMAGE & GRID RESPONSIVENESS
+   ============================= */
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-item img, .grid-item video {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        display: block;
+        margin: auto;
+    }
+}
+
+/* =============================
+   ✅ WRITING PAGE (TEXT FORMATTING)
+   ============================= */
+@media screen and (max-width: 768px) {
+    .article {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .article img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* =============================
+   ✅ TEXT SIZE ADJUSTMENTS
+   ============================= */
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.8em;
+    }
+    p {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+}
     </style>
 </head>
 <body>

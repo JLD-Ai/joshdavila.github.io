@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josh Davila</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <style>
         /* Apply the Dancing Script font to the logo */
         .logo {
@@ -14,205 +13,155 @@
             font-size: 4em;
             font-weight: 700;
             text-align: center;
+            display: block;
+            margin: auto;
         }
-    </style>
-</head>
+
+        body {
+            font-family: 'Merriweather', serif;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000;
+            overflow-x: hidden;
         }
+
         .container {
             width: 80%;
             margin: auto;
             padding: 20px 0;
             max-width: 1200px;
         }
+
         .header {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column; /* Center header content on mobile */
             align-items: center;
             padding: 20px 0;
             max-width: 1200px;
             margin: auto;
             border-bottom: 1px solid #ddd;
         }
-        .logo {
-            font-family: 'Great Vibes', cursive;
-            font-size: 4em;
-            font-weight: 555;
-            text-decoration: none;
-            color: #000;
-            margin-left: 20px; /* Pushes the logo all the way to the left */
-            flex-grow: 1; /* Ensures it takes available space */
-        }
+
         .nav-links {
             display: flex;
-            gap: 20px;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 10px;
         }
+
         .nav-links a {
             text-decoration: none;
             color: #000;
             font-size: 1.1em;
+            padding: 5px;
         }
+
         .section {
-            max-width: 1000px; /* Keeps the text block well-balanced */
-            margin: 40px auto; /* Centers and maintains good spacing */
+            max-width: 1000px;
+            margin: 40px auto;
             text-align: justify;
             line-height: 1.75;
         }
+
         .large-image {
             width: 100%;
-            max-width: 700px; /* Restricts image size */
+            max-width: 700px;
             height: auto;
             margin: 5px auto;
             display: block;
         }
+
         .footer {
-            padding: 8px; /* Reduces excess space */
-            background-color: #e0e0e0; /* Slightly darker gray */
+            padding: 8px;
+            background-color: #e0e0e0;
             font-size: 0.9em;
             text-align: center;
         }
+
         .contact {
-            text-align: center; /* Centers the contact section */
-            max-width: 700px; /* Keeps it aligned with other sections */
-            margin-top: 85px; /* Increase spacing slightly */
+            text-align: center;
+            max-width: 700px;
+            margin-top: 85px;
         }
-        /* =============================
-   ✅ MOBILE FIXES (NAV & HEADER)
-   ============================= */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        gap: 12px;
-        padding: 10px;
-    }
-    .nav-links a {
-        font-size: 1em;
-        padding: 5px;
-    }
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
-/* =============================
-   ✅ HEADER & FONT SCALING
-   ============================= */
-@media screen and (max-width: 600px) {
-    .logo {
-        font-size: 2.5em; /* Scale down header */
-        text-align: center;
-        display: block;
-        margin: auto;
-    }
-}
+        /* Responsive Mobile Fixes */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
 
-/* =============================
-   ✅ IMAGE & GRID RESPONSIVENESS
-   ============================= */
-@media screen and (max-width: 1024px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        justify-content: center;
-    }
-}
+            .header {
+                align-items: center;
+            }
 
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .grid-item img, .grid-item video {
-        width: 100%;
-        height: auto;
-        max-width: 500px;
-        display: block;
-        margin: auto;
-    }
-}
+            .logo {
+                font-size: 3em;
+                text-align: center;
+            }
 
-/* =============================
-   ✅ WRITING PAGE (TEXT FORMATTING)
-   ============================= */
-@media screen and (max-width: 768px) {
-    .article {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    .article img {
-        max-width: 100%;
-        height: auto;
-    }
-}
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
 
-/* =============================
-   ✅ TEXT SIZE ADJUSTMENTS
-   ============================= */
-@media screen and (max-width: 768px) {
-    h1, h2 {
-        font-size: 1.8em;
-    }
-    p {
-        font-size: 1.1em;
-        line-height: 1.6;
-    }
-}
-.contact h2 {
-    margin-bottom: 1px; /* Reduce space between "Contact" and email */
-    }
-        .image-container {
-    text-align: center; /* Centers image and caption */
-    margin: 40px auto;
-    max-width: 800px;
-}
-.image-caption {
-    font-size: 0.9em; /* Slightly smaller text */
-    color: #555; /* Soft gray for readability */
-    font-style: italic;
-    line-height: 1.6;
-    margin: 0; /* Removes all margins */
-    padding: 0; /* Removes all padding */
-    display: block; /* Ensures it stays below the image */
-}
+            .grid-item img, .grid-item video {
+                width: 100%;
+                height: auto;
+                max-width: 500px;
+                display: block;
+                margin: auto;
+            }
+
+            h1, h2 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1.1em;
+                line-height: 1.6;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
-      <header class="header">
-    <a href="index.html" class="logo">Josh Davila</a>
-</header>
-            <nav class="nav-links">
-    <a href="index.html">About</a>  <!-- Ensures "About" links back to the homepage -->
-    <a href="works.html">Works</a>
-    <a href="writing.html">Writing</a>
-    <a href="other.html">Other</a>
-    <a href="bio.html">Bio</a>
-</nav>
+        <header class="header">
+            <a href="index.html" class="logo">Josh Davila</a>
         </header>
         
+        <nav class="nav-links">
+            <a href="index.html">About</a>
+            <a href="works.html">Works</a>
+            <a href="writing.html">Writing</a>
+            <a href="other.html">Other</a>
+            <a href="bio.html">Bio</a>
+        </nav>
+
         <section id="about" class="section">
             <p>Josh Davila is an artist working with <strong>artificial intelligence and new media</strong> to explore themes of <strong>language, memory, and the unconscious</strong>. His practice is deeply influenced by <strong>Experimental Surrealism</strong>, a <strong>self-coined movement</strong> that integrates emerging technologies—such as AI and generative systems—into contemporary surrealist exploration. Through his work, he examines how machines reconstruct meaning and distort human perception, while using AI as a tool to explore trauma and fragmented identity.</p>
-            
+
             <p>Grounded in a personal history of <strong>trauma and survival</strong>, Davila’s work engages with <strong>fractured identity and the evolving dialogue between human and machine creativity</strong>. An <strong>early adopter of generative AI</strong>, he has been experimenting with neural networks since 2021, both as a <strong>creative tool and as a means of navigating personal history and lived experience</strong>.</p>
         </section>
-        
+
         <section class="section image-container">
-    <img src="concept-logic.jpg" alt="Featured Artwork" class="large-image">
-    <p class="image-caption">
-        Title: <em>The Concept of Logic</em> | Josh Davila<br>
-        Exhibited in <em>Philosophical Abstractions</em>, San Diego Commission for Arts and Culture (2022)<br>
-        <strong>🔗 <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/3" target="_blank">View 1/1 NFT on Foundation</a></strong>
-    </p>
-</section>
+            <img src="concept-logic.jpg" alt="Featured Artwork" class="large-image">
+            <p class="image-caption">
+                Title: <em>The Concept of Logic</em> | Josh Davila<br>
+                Exhibited in <em>Philosophical Abstractions</em>, San Diego Commission for Arts and Culture (2022)<br>
+                <strong>🔗 <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/3" target="_blank">View 1/1 NFT on Foundation</a></strong>
+            </p>
+        </section>
+
         <section id="contact" class="section contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:jld.art123@gmail.com">jld.art123@gmail.com</a></p>
         </section>
-        
+
         <div class="footer">
             <p>&copy; 2025 Josh Davila. All rights reserved.</p>
         </div>

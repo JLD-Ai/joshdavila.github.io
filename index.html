@@ -39,7 +39,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between; /* Logo on the left, links on the right */
+    justify-content: space-between; /* Ensures logo stays left, links stay right */
     align-items: center;
     padding: 20px 0;
     max-width: 1200px;
@@ -49,17 +49,18 @@ body {
 
 .logo {
     font-family: 'Dancing Script', cursive;
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 700;
-    color: #000; /* Ensure black */
+    color: #000;
     text-decoration: none;
-    margin-left: 20px; /* Keeps logo aligned left */
+    margin-left: 20px;
+    flex-grow: 1; /* Pushes logo to the left */
 }
 
 .nav-links {
     display: flex;
     gap: 20px;
-    margin-left: auto; /* Pushes links to the right */
+    margin-left: auto;
 }
 
 .nav-links a {
@@ -68,7 +69,6 @@ body {
     font-size: 1.1em;
     padding: 5px;
 }
-
 /* MOBILE FIXES */
 @media screen and (max-width: 768px) {
     .header {

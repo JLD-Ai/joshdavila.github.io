@@ -219,6 +219,13 @@
             p {
                 font-size: 1.1em;
                 line-height: 1.6;
+                @media screen and (max-width: 768px) {
+    .section p:last-of-type {
+        margin-bottom: 10px; /* Reduce gap after the last paragraph */
+    }
+
+    .image-container {
+        margin-top: 10px; /* Reduce gap before the image */
             }
         }
     </style>

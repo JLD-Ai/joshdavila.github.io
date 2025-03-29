@@ -6,208 +6,207 @@
     <title>Josh Davila</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
-  /* =============================
-   ✅ DESKTOP LAYOUT (DEFAULT)
-   ============================= */
-body {
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #000;
-    overflow-x: hidden;
-}
+    <style>
+        /* =============================
+           ✅ GLOBAL STYLES
+           ============================= */
+        body {
+            font-family: 'Merriweather', serif;
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000;
+            overflow-x: hidden;
+        }
 
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px 0;
-    max-width: 1200px;
-}
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+            max-width: 1200px;
+        }
 
-/* =============================
-   ✅ HEADER NAVIGATION
-   ============================= */
-.header {
-    display: flex;
-    justify-content: space-between; /* Ensures logo stays left, links stay right */
-    align-items: center;
-    padding: 20px 0;
-    max-width: 1200px;
-    margin: auto;
-    border-bottom: 1px solid #ddd;
-}
+        /* =============================
+           ✅ HEADER NAVIGATION
+           ============================= */
+        .header {
+            display: flex;
+            justify-content: space-between; /* Ensures logo stays left, links stay right */
+            align-items: center;
+            padding: 20px 0;
+            max-width: 1200px;
+            margin: auto;
+            border-bottom: 1px solid #ddd;
+        }
 
-/* Corrected `.logo` */
-.logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5em;
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: auto; /* Ensures logo is on the left */
-}
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: auto; /* Ensures logo stays left */
+        }
 
-/* Navigation Links */
-.nav-links {
-    display: flex;
-    gap: 20px;
-    margin-left: auto;
-}
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-left: auto;
+        }
 
-.nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.1em;
-    padding: 5px;
-    white-space: nowrap; /* Prevents wrapping */
-}
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.1em;
+            padding: 5px;
+            white-space: nowrap; /* Prevents wrapping */
+        }
 
-/* =============================
-   ✅ MOBILE HEADER FIXES
-   ============================= */
-@media screen and (max-width: 768px) {
-    .header {
-        flex-direction: row; /* Ensures logo and links stay in one row */
-        justify-content: space-between;
-        padding: 10px 20px;
-        align-items: center;
-    }
+        /* =============================
+           ✅ MOBILE HEADER FIXES
+           ============================= */
+        @media screen and (max-width: 768px) {
+            .header {
+                flex-direction: row; /* Keeps logo and links in one row */
+                justify-content: space-between;
+                padding: 10px 20px;
+                align-items: center;
+            }
 
-    .logo {
-        font-size: 2.8em; /* Reduce font size slightly for mobile */
-        margin-left: 0;
-        flex-grow: 0; /* Prevents logo from pushing links */
-    }
+            .logo {
+                font-size: 2.8em; /* Reduce font size slightly for mobile */
+                margin-left: 0;
+                flex-grow: 0; /* Prevents logo from pushing links */
+            }
 
-    .nav-links {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        flex-direction: row; /* Ensures links remain in a row */
-    }
+            .nav-links {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                flex-direction: row; /* Keeps links in a row */
+            }
 
-    .nav-links a {
-        font-size: 1em;
-        padding: 5px;
-        white-space: nowrap; /* Prevents links from wrapping */
-    }
-}
+            .nav-links a {
+                font-size: 1em;
+                padding: 5px;
+                white-space: nowrap; /* Prevents links from wrapping */
+            }
+        }
 
-/* =============================
-   ✅ IMAGE CONTAINER & FOOTER
-   ============================= */
-.large-image {
-    width: 100%;
-    max-width: 900px; /* Keeps desktop scaling proper */
-    height: auto;
-    margin: 5px auto;
-    display: block;
-}
+        /* =============================
+           ✅ IMAGE CONTAINER & FOOTER
+           ============================= */
+        .large-image {
+            width: 100%;
+            max-width: 900px; /* Keeps desktop scaling proper */
+            height: auto;
+            margin: 5px auto;
+            display: block;
+        }
 
-.image-container {
-    text-align: center; /* Centers image and caption */
-    margin: 40px auto;
-    max-width: 800px;
-}
+        .image-container {
+            text-align: center; /* Centers image and caption */
+            margin: 40px auto;
+            max-width: 800px;
+        }
 
-.image-caption {
-    font-size: 0.9em;
-    color: #555;
-    font-style: italic;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    display: block; /* Ensures it stays below the image */
-}
+        .image-caption {
+            font-size: 0.9em;
+            color: #555;
+            font-style: italic;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: block; /* Ensures it stays below the image */
+        }
 
-/* Footer */
-.footer {
-    padding: 8px;
-    background-color: #e0e0e0;
-    font-size: 0.9em;
-    text-align: center;
-}
+        /* Footer */
+        .footer {
+            padding: 8px;
+            background-color: #e0e0e0;
+            font-size: 0.9em;
+            text-align: center;
+        }
 
-/* Contact Section */
-.contact {
-    text-align: center;
-    max-width: 700px;
-    margin-top: 50px;
-}
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            max-width: 700px;
+            margin-top: 50px;
+        }
 
-/* =============================
-   ✅ RESPONSIVE MOBILE FIXES
-   ============================= */
-@media screen and (max-width: 768px) {
-    .section {
-        max-width: 90%;
-        padding: 10px;
-    }
+        /* =============================
+           ✅ RESPONSIVE MOBILE FIXES
+           ============================= */
+        @media screen and (max-width: 768px) {
+            .section {
+                max-width: 90%;
+                padding: 10px;
+            }
 
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
 
-    .grid-item img, .grid-item video {
-        width: 100%;
-        height: auto;
-        max-width: 500px;
-        display: block;
-        margin: auto;
-    }
+            .grid-item img, .grid-item video {
+                width: 100%;
+                height: auto;
+                max-width: 500px;
+                display: block;
+                margin: auto;
+            }
 
-    .large-image {
-        max-width: 100%; /* Allow better scaling for mobile */
-    }
-}
+            .large-image {
+                max-width: 100%; /* Allow better scaling for mobile */
+            }
+        }
 
-/* =============================
-   ✅ WRITING PAGE FIX
-   ============================= */
-@media screen and (max-width: 768px) {
-    .article {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
+        /* =============================
+           ✅ WRITING PAGE FIX
+           ============================= */
+        @media screen and (max-width: 768px) {
+            .article {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
 
-    .article img {
-        max-width: 100%;
-        height: auto;
-    }
-}
+            .article img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
 
-/* =============================
-   ✅ TEXT SIZE SCALING
-   ============================= */
-@media screen and (max-width: 768px) {
-    h1, h2 {
-        font-size: 1.8em;
-    }
+        /* =============================
+           ✅ TEXT SIZE SCALING
+           ============================= */
+        @media screen and (max-width: 768px) {
+            h1, h2 {
+                font-size: 1.8em;
+            }
 
-    p {
-        font-size: 1.1em;
-        line-height: 1.6;
-    }
-}
+            p {
+                font-size: 1.1em;
+                line-height: 1.6;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
        <header class="header">
-    <a href="index.html" class="logo">Josh Davila</a>
-    <nav class="nav-links">
-        <a href="index.html">About</a>
-        <a href="works.html">Works</a>
-        <a href="writing.html">Writing</a>
-        <a href="other.html">Other</a>
-        <a href="bio.html">Bio</a>
-    </nav>
-</header>
+            <a href="index.html" class="logo">Josh Davila</a>
+            <nav class="nav-links">
+                <a href="index.html">About</a>
+                <a href="works.html">Works</a>
+                <a href="writing.html">Writing</a>
+                <a href="other.html">Other</a>
+                <a href="bio.html">Bio</a>
+            </nav>
+        </header>
 
         <section id="about" class="section">
             <p>Josh Davila is an artist working with <strong>artificial intelligence and new media</strong> to explore themes of <strong>language, memory, and the unconscious</strong>. His practice is deeply influenced by <strong>Experimental Surrealism</strong>, a <strong>self-coined movement</strong> that integrates emerging technologies—such as AI and generative systems—into contemporary surrealist exploration. Through his work, he examines how machines reconstruct meaning and distort human perception, while using AI as a tool to explore trauma and fragmented identity.</p>
@@ -215,14 +214,14 @@ body {
             <p>Grounded in a personal history of <strong>trauma and survival</strong>, Davila’s work engages with <strong>fractured identity and the evolving dialogue between human and machine creativity</strong>. An <strong>early adopter of generative AI</strong>, he has been experimenting with neural networks since 2021, both as a <strong>creative tool and as a means of navigating personal history and lived experience</strong>.</p>
         </section>
 
-   <section class="section image-container">
-    <img src="concept-logic.jpg" alt="Featured Artwork" class="large-image">
-    <p class="image-caption">
-        <strong>Title:</strong> <em>The Concept of Logic</em> | Josh Davila<br>
-        Exhibited in <em>Philosophical Abstractions</em>, San Diego Commission for Arts and Culture (2022)<br>
-        <strong>🔗 <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/3" target="_blank">View 1/1 NFT on Foundation</a></strong>
-    </p>
-</section>
+       <section class="section image-container">
+            <img src="concept-logic.jpg" alt="Featured Artwork" class="large-image">
+            <p class="image-caption">
+                <strong>Title:</strong> <em>The Concept of Logic</em> | Josh Davila<br>
+                Exhibited in <em>Philosophical Abstractions</em>, San Diego Commission for Arts and Culture (2022)<br>
+                <strong>🔗 <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/3" target="_blank">View 1/1 NFT on Foundation</a></strong>
+            </p>
+        </section>
 
         <section id="contact" class="section contact">
             <h2>Contact</h2>

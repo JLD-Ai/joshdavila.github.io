@@ -39,7 +39,7 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between; /* Keeps logo on the left & links on the right */
+    justify-content: space-between; /* Logo on the left, links on the right */
     align-items: center;
     padding: 20px 0;
     max-width: 1200px;
@@ -51,9 +51,9 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 4em;
     font-weight: 700;
-    color: #000; /* Ensure it's black */
+    color: #000; /* Ensure black */
     text-decoration: none;
-    margin-left: 20px; /* Keeps logo on the left */
+    margin-left: 20px; /* Keeps logo aligned left */
 }
 
 .nav-links {
@@ -67,7 +67,23 @@ body {
     color: #000;
     font-size: 1.1em;
     padding: 5px;
+}
 
+/* MOBILE FIXES */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack logo & nav */
+        align-items: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+    }
 }
 
 .section {
@@ -183,17 +199,16 @@ body {
 
 <body>
     <div class="container">
-        <header class="header">
-            <a href="index.html" class="logo">Josh Davila</a>
-        </header>
-        
-        <nav class="nav-links">
-            <a href="index.html">About</a>
-            <a href="works.html">Works</a>
-            <a href="writing.html">Writing</a>
-            <a href="other.html">Other</a>
-            <a href="bio.html">Bio</a>
-        </nav>
+       <header class="header">
+    <a href="index.html" class="logo">Josh Davila</a>
+    <nav class="nav-links">
+        <a href="index.html">About</a>
+        <a href="works.html">Works</a>
+        <a href="writing.html">Writing</a>
+        <a href="other.html">Other</a>
+        <a href="bio.html">Bio</a>
+    </nav>
+</header>
 
         <section id="about" class="section">
             <p>Josh Davila is an artist working with <strong>artificial intelligence and new media</strong> to explore themes of <strong>language, memory, and the unconscious</strong>. His practice is deeply influenced by <strong>Experimental Surrealism</strong>, a <strong>self-coined movement</strong> that integrates emerging technologies—such as AI and generative systems—into contemporary surrealist exploration. Through his work, he examines how machines reconstruct meaning and distort human perception, while using AI as a tool to explore trauma and fragmented identity.</p>

@@ -6,17 +6,7 @@
     <title>Josh Davila</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-        /* Apply the Dancing Script font to the logo */
-        .logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 4em;
-    font-weight: 700;
-    color: #000 !important; /* Force black */
-    text-decoration: none;
-}
-
- /* =============================
+  /* =============================
    ✅ DESKTOP LAYOUT (DEFAULT)
    ============================= */
 body {
@@ -36,6 +26,9 @@ body {
     max-width: 1200px;
 }
 
+/* =============================
+   ✅ HEADER NAVIGATION
+   ============================= */
 .header {
     display: flex;
     justify-content: space-between; /* Ensures logo stays left, links stay right */
@@ -46,46 +39,7 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-.logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5em;
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
-    margin-left: 20px;
-    flex-grow: 1; /* Pushes logo to the left */
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    margin-left: auto;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.1em;
-    padding: 5px;
-}
-/* =============================
-   ✅ MOBILE HEADER FIXES
-   ============================= */
-@media screen and (max-width: 768px) {
-   /* =============================
-   ✅ HEADER NAVIGATION (DESKTOP & MOBILE)
-   ============================= */
-.header {
-    display: flex;
-    justify-content: space-between; /* Keeps logo on the left, links on the right */
-    align-items: center;
-    padding: 20px 0;
-    max-width: 1200px;
-    margin: auto;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Corrected the syntax error here */
+/* Corrected `.logo` */
 .logo {
     font-family: 'Dancing Script', cursive;
     font-size: 3.5em;
@@ -96,6 +50,7 @@ body {
     margin-right: auto; /* Ensures logo is on the left */
 }
 
+/* Navigation Links */
 .nav-links {
     display: flex;
     gap: 20px;
@@ -140,12 +95,32 @@ body {
         white-space: nowrap; /* Prevents links from wrapping */
     }
 }
+
+/* =============================
+   ✅ IMAGE CONTAINER & FOOTER
+   ============================= */
 .large-image {
     width: 100%;
-    max-width: 900px; /* Increased to maintain proper desktop scaling */
+    max-width: 900px; /* Keeps desktop scaling proper */
     height: auto;
     margin: 5px auto;
     display: block;
+}
+
+.image-container {
+    text-align: center; /* Centers image and caption */
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.image-caption {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: block; /* Ensures it stays below the image */
 }
 
 /* Footer */
@@ -167,33 +142,6 @@ body {
    ✅ RESPONSIVE MOBILE FIXES
    ============================= */
 @media screen and (max-width: 768px) {
-    .header {
-        flex-direction: row; /* Keeps it in a row */
-        justify-content: space-between;
-        padding: 10px 20px;
-    }
-
-    .logo {
-        font-size: 3em; /* Reduce size for mobile */
-        margin-left: 0;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        padding: 5px;
-        flex-direction: row; /* Keeps nav links in a single row */
-    }
-
-    .nav-links a {
-        font-size: 1em;
-        padding: 5px;
-    }
-}
-    }
-
     .section {
         max-width: 90%;
         padding: 10px;
@@ -216,7 +164,9 @@ body {
     }
 }
 
-/* Writing Page Fix */
+/* =============================
+   ✅ WRITING PAGE FIX
+   ============================= */
 @media screen and (max-width: 768px) {
     .article {
         flex-direction: column;
@@ -230,7 +180,9 @@ body {
     }
 }
 
-/* Text Size Scaling */
+/* =============================
+   ✅ TEXT SIZE SCALING
+   ============================= */
 @media screen and (max-width: 768px) {
     h1, h2 {
         font-size: 1.8em;
@@ -240,26 +192,6 @@ body {
         font-size: 1.1em;
         line-height: 1.6;
     }
-}
-        .image-container {
-    text-align: center; /* Centers image and caption */
-    margin: 40px auto;
-    max-width: 800px;
-}
-
-.image-caption {
-    font-size: 0.9em; /* Slightly smaller text */
-    color: #555; /* Soft gray for readability */
-    font-style: italic;
-    line-height: 1.6;
-    margin: 0; /* Removes all margins */
-    padding: 0; /* Removes all padding */
-    display: block; /* Ensures it stays below the image */
-}
-
-.contact {
-    text-align: center; /* Center-align the contact info */
-    margin-top: 30px;
 }
     </style>
 </head>

@@ -8,13 +8,13 @@
 
     <style>
         /* Apply the Dancing Script font to the logo */
-        .logo {
-            font-family: 'Dancing Script', cursive;
-            font-size: 4em;
-            font-weight: 700;
-            text-align: center;
-            display: block;
-            margin: auto;
+        ..logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    font-weight: 700;
+    color: #000 !important; /* Force black */
+    text-decoration: none;
+}
         }
 
  /* =============================
@@ -101,26 +101,32 @@ body {
 /* =============================
    ✅ RESPONSIVE MOBILE FIXES
    ============================= */
-@media screen and (max-width: 1024px) {
-    .container {
-        width: 90%;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        flex-direction: row; /* Keeps it in a row */
+        justify-content: space-between;
+        padding: 10px 20px;
     }
 
     .logo {
         font-size: 3em; /* Reduce size for mobile */
+        margin-left: 0;
     }
 
     .nav-links {
-        flex-direction: column;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 5px;
+        flex-direction: row; /* Keeps nav links in a single row */
+    }
+
+    .nav-links a {
+        font-size: 1em;
+        padding: 5px;
+    }
+}
     }
 
     .section {

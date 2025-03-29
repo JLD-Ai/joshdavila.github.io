@@ -69,23 +69,36 @@ body {
     font-size: 1.1em;
     padding: 5px;
 }
-/* MOBILE FIXES */
+/* =============================
+   ✅ MOBILE HEADER FIXES
+   ============================= */
 @media screen and (max-width: 768px) {
     .header {
-        flex-direction: column; /* Stack logo & nav */
+        flex-direction: row; /* Ensures logo and links stay in one row */
+        justify-content: space-between;
+        padding: 10px 20px;
         align-items: center;
     }
 
+    .logo {
+        font-size: 2.8em; /* Reduce font size slightly for mobile */
+        margin-left: 0;
+        flex-grow: 0; /* Prevents logo from pushing links */
+    }
+
     .nav-links {
+        display: flex;
         justify-content: center;
-        gap: 12px;
+        gap: 15px;
+        flex-direction: row; /* Ensures links remain in a row */
     }
 
     .nav-links a {
         font-size: 1em;
+        padding: 5px;
+        white-space: nowrap; /* Prevents links from wrapping */
     }
 }
-
 .section {
     max-width: 1000px;
     margin: 40px auto;

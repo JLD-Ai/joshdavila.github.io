@@ -65,34 +65,64 @@
         }
 
         /* =============================
-           ✅ MOBILE HEADER FIXES
-           ============================= */
-      @media screen and (max-width: 768px) {
-    .header {
-        flex-wrap: nowrap; /* Forces everything to stay in a single row */
-        overflow: hidden; /* Ensures nothing breaks */
-        white-space: nowrap;
-    }
-
-    .logo {
-        font-size: 2.5em; /* Reduce font size slightly for mobile */
-        margin-left: 0;
-        flex-grow: 0; /* Prevents logo from pushing links */
-    }
-
+   ✅ MOBILE FIXES (NAV & HEADER)
+   ============================= */
+@media screen and (max-width: 768px) {
     .nav-links {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
-        flex-direction: row; /* Ensures links remain in a row */
+        text-align: center;
+        gap: 12px;
+        padding: 10px;
     }
-
     .nav-links a {
         font-size: 1em;
         padding: 5px;
-        white-space: nowrap; /* Prevents links from wrapping */
-            }
-        }
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* =============================
+   ✅ HEADER & FONT SCALING
+   ============================= */
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 2.5em; /* Scale down header */
+        text-align: center;
+        display: block;
+        margin: auto;
+    }
+}
+
+/* =============================
+   ✅ IMAGE & GRID RESPONSIVENESS
+   ============================= */
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-item img, .grid-item video {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+        display: block;
+        margin: auto;
+    }
+}
 
         /* =============================
            ✅ IMAGE CONTAINER & FOOTER

@@ -22,46 +22,33 @@
             max-width: 1200px;
         }
         .header {
-    display: flex;
-    justify-content: space-between; /* Ensures logo stays left, links stay right */
-    align-items: center;
-    padding: 20px 0;
-    max-width: 1200px;
-    margin: auto;
-    border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            max-width: 1200px;
+            margin: auto;
+            border-bottom: 1px solid #ddd;
         }
-   .logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5em;
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
-    margin-left: 20px;
-    flex-grow: 1; /* Pushes logo to the left */
-}
+        .logo {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            font-weight: 700;
+            color: #000;
+            text-decoration: none;
+            margin-left: 20px;
+            flex-grow: 1;
         }
         .nav-links {
-    display: flex;
-    gap: 20px;
-    margin-left: auto; /* Pushes links to the right */
+            display: flex;
+            gap: 20px;
+            margin-left: auto;
         }
-.nav-links {
-    display: flex;
-    gap: 20px;
-    margin-left: auto;
-}
         .nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.1em;
-    padding: 5px;
-}
-        }
-        .section {
-            max-width: 1000px;
-            margin: 40px auto;
-            text-align: justify;
-            line-height: 1.75;
+            text-decoration: none;
+            color: #000;
+            font-size: 1.1em;
+            padding: 5px;
         }
 
         /* Grid Layout */
@@ -71,28 +58,13 @@
             gap: 20px;
             justify-content: center;
         }
-
         .grid-item {
             text-align: center;
         }
-
-        /* First row: Three equal images */
         .grid-item img, .grid-item video {
             width: 100%;
             height: auto;
             border-radius: 5px;
-        }
-
-        /* Second row: Two larger images, centered */
-        .grid-row-two {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .grid-item.large {
-            flex: 0 1 45%; /* Each image takes 45% of the row width */
-            max-width: 500px;
         }
 
         /* Full-width last row */
@@ -101,238 +73,131 @@
             text-align: center;
         }
 
-        /* Ensuring images don’t exceed grid size */
-        .grid-item img, .grid-item video {
-            max-width: 100%;
-            border-radius: 5px;
-        }
-
+        /* Footer */
         .footer {
             padding: 8px;
             background-color: #e0e0e0;
             font-size: 0.9em;
             text-align: center;
         }
-        .full-width {
-    grid-column: 1 / -1; /* This makes the item span the entire row */
-    text-align: center;
-}
-        /* =============================
-   ✅ MOBILE FIXES (NAV & HEADER)
-   ============================= */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        gap: 12px;
-        padding: 10px;
-    }
-    .nav-links a {
-        font-size: 1em;
-        padding: 5px;
-    }
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
-/* =============================
-   ✅ HEADER & FONT SCALING
-   ============================= */
-@media screen and (max-width: 600px) {
-    .logo {
-        font-size: 2.5em; /* Scale down header */
-        text-align: center;
-        display: block;
-        margin: auto;
-    }
-}
-
-/* =============================
-   ✅ IMAGE & GRID RESPONSIVENESS
-   ============================= */
-@media screen and (max-width: 1024px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .grid-item img, .grid-item video {
-        width: 100%;
-        height: auto;
-        max-width: 500px;
-        display: block;
-        margin: auto;
-    }
-}
-
-/* =============================
-   ✅ WRITING PAGE (TEXT FORMATTING)
-   ============================= */
-@media screen and (max-width: 768px) {
-    .article {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    .article img {
-        max-width: 100%;
-        height: auto;
-    }
-}
-
-/* =============================
-   ✅ TEXT SIZE ADJUSTMENTS
-   ============================= */
-@media screen and (max-width: 768px) {
-    h1, h2 {
-        font-size: 1.8em;
-    }
-    p {
-        font-size: 1.1em;
-        line-height: 1.6;
-    }
-}
+        /* Responsive Fixes */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                gap: 12px;
+                padding: 10px;
+            }
+            .nav-links a {
+                font-size: 1em;
+                padding: 5px;
+            }
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .grid-item img, .grid-item video {
+                max-width: 500px;
+                margin: auto;
+            }
+        }
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="container">
-        <header class="header">
-            <a href="index.html" class="logo">Josh Davila</a>
-           <nav class="nav-links">
-    <a href="index.html">About</a>
-    <a href="works.html">Works</a>
-    <a href="writing.html">Writing</a>
-    <a href="other.html">Other</a>
-    <a href="bio.html">Bio</a>
-</nav>
-        </header>
-        
-<section class="section">
-    <h2>VQGAN Works</h2>
-    <div class="grid-container">
+      <header class="header">
+        <a href="index.html" class="logo">Josh Davila</a>
+        <nav class="nav-links">
+          <a href="index.html">About</a>
+          <a href="works.html">Works</a>
+          <a href="writing.html">Writing</a>
+          <a href="other.html">Other</a>
+          <a href="bio.html">Bio</a>
+        </nav>
+      </header>
 
-        <!-- New Row: Foundation VQGAN Works -->
-        <div class="grid-item">
-    <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/5" target="_blank">
-        <img src="vqgan-media/abandon.png" alt="Abandon">
-    </a>
-    <p><strong>Abandon</strong> | Foundation</p>
-</div>
-        
-<div class="grid-item">
-    <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/6" target="_blank">
-        <video width="100%" autoplay loop muted playsinline>
-            <source src="vqgan-media/world.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </a>
-    <p><strong>Not My World</strong> | Foundation</p>
-</div>
-
-<div class="grid-item">
-    <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/9" target="_blank">
-        <img src="vqgan-media/underworld.png" alt="Veiovis Underworld">
-    </a>
-    <p><strong>Veiovis Underworld</strong> | Foundation</p>
-</div>
-
-        <div class="grid-item">
-    <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/7" target="_blank">
-        <img src="vqgan-media/libel.png" alt="Libel">
-    </a>
-    <p><strong>Libel</strong> | Foundation</p>
-</div>
-        
-<div class="grid-item">
-    <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/3" target="_blank">
-        <img src="vqgan-media/logic.jpg" alt="The Concept of Logic">
-    </a>
-    <p><strong>The Concept of Logic</strong> | Foundation</p>
-</div>
-
-<div class="grid-item">
-    <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/8" target="_blank">
-        <img src="vqgan-media/traditions.png" alt="Traditions">
-    </a>
-    <p><strong>Traditions</strong> | Foundation</p>
-</div>
-
-
-        <!-- Act of Defiance (Full Width) -->
-<div class="grid-item full-width">
-    <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/1" target="_blank">
-        <img src="vqgan-media/defiance.jpg" alt="Act of Defiance">
-    </a>
-    <p><strong>Act of Defiance</strong> | Foundation</p>
-</div>
-
-<!-- Row: Veracity, Philosopher, Cognizance -->
-<div class="grid-item">
-    <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/19" target="_blank">
-        <img src="vqgan-media/veracity.jpg" alt="Veracity">
-    </a>
-    <p><strong>Veracity</strong> | Objkt</p>
-</div>
-
-<div class="grid-item">
-    <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/14" target="_blank">
-        <img src="vqgan-media/philosopher.jpg" alt="Philosopher">
-    </a>
-    <p><strong>Philosopher</strong> | Objkt</p>
-</div>
-
-<div class="grid-item">
-    <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/3" target="_blank">
-        <img src="vqgan-media/cognizance.jpg" alt="Cognizance">
-    </a>
-    <p><strong>Cognizance</strong> | Objkt</p>
-</div>
-
-    </div>
-
-    <!-- Row 2: Two larger images, centered -->
-    <div class="grid-row-two">
-        <div class="grid-item large">
-            <a href="https://objkt.com/tokens/kalamint/80857" target="_blank">
-                <img src="vqgan-media/interstellar waterfall.jpg" alt="Interstellar Waterfall">
+      <section class="section">
+        <h2>VQGAN Works</h2>
+        <div class="grid-container">
+          
+          <!-- ✅ TOP ROW: Cognizance, Philosopher, Veracity -->
+          <div class="grid-item">
+            <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/3" target="_blank">
+              <img src="vqgan-media/cognizance.jpg" alt="Cognizance">
             </a>
-            <p><strong>Interstellar Waterfall</strong> | Objkt</p>
-        </div>
+            <p><strong>Cognizance</strong> | Objkt</p>
+          </div>
 
-        <div class="grid-item large">
-            <a href="https://objkt.com/tokens/kalamint/80682" target="_blank">
-                <img src="vqgan-media/city of the future.jpg" alt="City of the Future">
+          <div class="grid-item">
+            <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/14" target="_blank">
+              <img src="vqgan-media/philosopher.jpg" alt="Philosopher">
             </a>
-            <p><strong>City of the Future</strong> | Objkt</p>
-        </div>
-    </div>
+            <p><strong>Philosopher</strong> | Objkt</p>
+          </div>
 
-    <!-- Row 3: Full-width video -->
-    <div class="grid-item full-width">
-        <a href="https://objkt.com/tokens/KT1L1vnEsZdmV7X9NTu4od1BzA8YkodsnoA3/34" target="_blank">
-            <video autoplay loop muted playsinline>
-                <source src="vqgan-media/elvin sanctuary.mp4" type="video/mp4">
+          <div class="grid-item">
+            <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/19" target="_blank">
+              <img src="vqgan-media/veracity.jpg" alt="Veracity">
+            </a>
+            <p><strong>Veracity</strong> | Objkt</p>
+          </div>
+
+          <!-- ✅ SECOND ROW: Foundation VQGAN Works -->
+          <div class="grid-item">
+            <a href="https://foundation.app/mint/eth/5" target="_blank">
+              <img src="vqgan-media/abandon.png" alt="Abandon">
+            </a>
+            <p><strong>Abandon</strong> | Foundation</p>
+          </div>
+
+          <div class="grid-item">
+            <a href="https://foundation.app/mint/eth/6" target="_blank">
+              <video width="100%" autoplay loop muted playsinline>
+                <source src="vqgan-media/world.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video>
-        </a>
-        <p><strong>Lost Elvin Sanctuary</strong> | Objkt</p>
-    </div>
+              </video>
+            </a>
+            <p><strong>Not My World</strong> | Foundation</p>
+          </div>
 
-</section>
+          <div class="grid-item">
+            <a href="https://foundation.app/mint/eth/9" target="_blank">
+              <img src="vqgan-media/underworld.png" alt="Veiovis Underworld">
+            </a>
+            <p><strong>Veiovis Underworld</strong> | Foundation</p>
+          </div>
 
-    <div class="footer">
+          <!-- ✅ ACT OF DEFIANCE (Full-width) -->
+          <div class="grid-item full-width">
+            <a href="https://foundation.app/mint/eth/1" target="_blank">
+              <img src="vqgan-media/defiance.jpg" alt="Act of Defiance">
+            </a>
+            <p><strong>Act of Defiance</strong> | Foundation</p>
+          </div>
+
+          <!-- ✅ FULL-WIDTH VIDEO -->
+          <div class="grid-item full-width">
+            <a href="https://objkt.com/tokens/KT1L1vnEsZdmV7X9NTu4od1BzA8YkodsnoA3/34" target="_blank">
+              <video autoplay loop muted playsinline>
+                <source src="vqgan-media/elvin-sanctuary.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <p><strong>Lost Elvin Sanctuary</strong> | Objkt</p>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="footer">
         <p>&copy; 2025 Josh Davila. All rights reserved.</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>

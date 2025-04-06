@@ -59,7 +59,7 @@
 .grid-intro {
     max-width: 1000px;
     margin: 0 auto 30px auto;
-    text-align: center;
+    text-align: left;        /* changed from center to left */
     font-size: 1em;
     line-height: 1.6;
     padding: 0 15px;
@@ -99,13 +99,10 @@
         }
 
         /* Responsive Fixes */
-        @media screen and (max-width: 768px) {
-            .nav-links {
-                flex-wrap: wrap;
-                justify-content: center;
-                text-align: center;
-                gap: 12px;
-                padding: 10px;
+  @media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr); /* ✅ Mobile only */
+  }
             }
             .nav-links a {
                 font-size: 1em;
@@ -153,7 +150,7 @@
     <!-- Your grid-item artworks go here -->
   </div>
 </section>
-   
+
           <!-- ✅ TOP ROW: Cognizance, Veracity, Philosopher -->
           <div class="grid-item">
             <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/3" target="_blank">

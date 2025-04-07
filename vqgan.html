@@ -4,128 +4,175 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VQGAN Works | Josh Davila</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Merriweather', serif;
       margin: 0;
       padding: 0;
-      background-color: #fff;
+      background-color: #ffffff;
       color: #000;
     }
     .container {
-      width: 90%;
       max-width: 1200px;
       margin: auto;
-      padding: 20px;
+      padding: 30px 20px;
     }
-    .header {
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #ddd;
       padding: 20px 0;
+      max-width: 1200px;
+      margin: auto;
+      border-bottom: 1px solid #ddd;
     }
     .logo {
       font-family: 'Dancing Script', cursive;
-      font-size: 3em;
-      text-decoration: none;
+      font-size: 3.5em;
+      font-weight: 700;
       color: #000;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
     }
     .nav-links a {
-      margin-left: 20px;
       text-decoration: none;
       color: #000;
-      font-size: 1em;
+      font-size: 1.1em;
     }
     h1 {
-      font-size: 2em;
-      margin-top: 40px;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
     }
-    .description {
+    p.overview {
       font-size: 1.1em;
       line-height: 1.6;
-      margin-bottom: 40px;
+      max-width: 1000px;
+      margin-bottom: 30px;
     }
-    .grid-container {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
-    .grid-item {
-      text-align: center;
-    }
-    .grid-item img,
-    .grid-item video {
+    .grid-item img, .grid-item video {
       width: 100%;
-      border-radius: 8px;
+      height: auto;
+      border-radius: 5px;
+    }
+    .grid-item p {
+      font-size: 0.9em;
+      text-align: center;
+      margin: 5px 0 0;
+    }
+    .full-width {
+      grid-column: span 3;
     }
     .footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #eee;
+      padding: 8px;
+      background-color: #e0e0e0;
       font-size: 0.9em;
+      text-align: center;
       margin-top: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <a href="index.html" class="logo">Josh Davila</a>
-      <nav class="nav-links">
-        <a href="index.html">About</a>
-        <a href="works.html">Works</a>
-        <a href="writing.html">Writing</a>
-        <a href="other.html">Other</a>
-        <a href="bio.html">Bio</a>
-      </nav>
-    </header>
+  <header>
+    <a href="index.html" class="logo">Josh Davila</a>
+    <nav class="nav-links">
+      <a href="index.html">About</a>
+      <a href="works.html">Works</a>
+      <a href="writing.html">Writing</a>
+      <a href="other.html">Other</a>
+      <a href="bio.html">Bio</a>
+    </nav>
+  </header>
 
+  <div class="container">
     <h1>VQGAN Works</h1>
-    <p class="description">
-      A selection of my earliest successes with VQGAN and CLIP-guided diffusion (2021–2022). Some pieces fall under the category of post-photography, beginning as photographs or drawings before transformation. Click each image to view its token and additional info.
+    <p class="overview">
+      A selection of my earliest artworks made with VQGAN and CLIP-guided diffusion (2021–2022). Most artworks below began as photographs or drawings before digital transformation. Click each image to view its token and additional info.
     </p>
 
-    <div class="grid-container">
-      <!-- Artwork Items -->
+    <div class="grid">
       <div class="grid-item">
-        <a href="#"><img src="vqgan-media/cognizance.jpg" alt="Cognizance"></a>
+        <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/3" target="_blank">
+          <img src="vqgan-media/cognizance.jpg" alt="Cognizance">
+        </a>
         <p><strong>Cognizance</strong> | Objkt</p>
       </div>
+
       <div class="grid-item">
-        <a href="#"><img src="vqgan-media/veracity.jpg" alt="Veracity"></a>
+        <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/19" target="_blank">
+          <img src="vqgan-media/veracity.jpg" alt="Veracity">
+        </a>
         <p><strong>Veracity</strong> | Objkt</p>
       </div>
+
       <div class="grid-item">
-        <a href="#"><img src="vqgan-media/philosopher.jpg" alt="Philosopher"></a>
+        <a href="https://objkt.com/tokens/KT1XUAW7LYiXMtNkK4ZMtqDHF8mhMqB6ScmN/14" target="_blank">
+          <img src="vqgan-media/philosopher.jpg" alt="Philosopher">
+        </a>
         <p><strong>Philosopher</strong> | Objkt</p>
       </div>
-      <div class="grid-item">
-        <a href="#"><img src="vqgan-media/abandon.png" alt="Abandon"></a>
-        <p><strong>Abandon</strong> | Foundation</p>
-      </div>
-      <div class="grid-item">
-        <a href="#"><video autoplay loop muted playsinline><source src="vqgan-media/world.mp4" type="video/mp4"></video></a>
-        <p><strong>Not My World</strong> | Foundation</p>
-      </div>
-      <div class="grid-item">
-        <a href="#"><img src="vqgan-media/underworld.png" alt="Veiovis Underworld"></a>
-        <p><strong>Veiovis Underworld</strong> | Foundation</p>
-      </div>
-      <div class="grid-item">
-        <a href="#"><img src="vqgan-media/defiance.jpg" alt="Act of Defiance"></a>
+
+      <div class="grid-item full-width">
+        <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/1" target="_blank">
+          <img src="vqgan-media/defiance.jpg" alt="Act of Defiance">
+        </a>
         <p><strong>Act of Defiance</strong> | Foundation</p>
       </div>
+
       <div class="grid-item">
-        <a href="#"><video autoplay loop muted playsinline><source src="vqgan-media/elvin sanctuary.mp4" type="video/mp4"></video></a>
+        <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/5" target="_blank">
+          <img src="vqgan-media/abandon.png" alt="Abandon">
+        </a>
+        <p><strong>Abandon</strong> | Foundation</p>
+      </div>
+
+      <div class="grid-item">
+        <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/6" target="_blank">
+          <video autoplay loop muted playsinline>
+            <source src="vqgan-media/world.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+        <p><strong>Not My World</strong> | Foundation</p>
+      </div>
+
+      <div class="grid-item">
+        <a href="https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/9" target="_blank">
+          <img src="vqgan-media/underworld.png" alt="Veiovis Underworld">
+        </a>
+        <p><strong>Veiovis Underworld</strong> | Foundation</p>
+      </div>
+
+      <div class="grid-item full-width">
+        <a href="https://objkt.com/tokens/KT1L1vnEsZdmV7X9NTu4od1BzA8YkodsnoA3/34" target="_blank">
+          <video autoplay loop muted playsinline controls>
+            <source src="vqgan-media/elvin sanctuary.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
         <p><strong>Lost Elvin Sanctuary</strong> | Objkt</p>
       </div>
     </div>
+  </div>
 
-    <div class="footer">
-      <p>&copy; 2025 Josh Davila. All rights reserved.</p>
-    </div>
+  <div class="footer">
+    <p>&copy; 2025 Josh Davila. All rights reserved.</p>
   </div>
 </body>
 </html>

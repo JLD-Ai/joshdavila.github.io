@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Augmented Earth | Josh Davila</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: #000;
+        overflow-x: hidden;
+      }
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 40px 20px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        max-width: 1100px;
+        margin: auto;
+        border-bottom: 1px solid #ddd;
+      }
+      .logo {
+        font-family: 'Dancing Script', cursive;
+        font-size: 3.5em;
+        font-weight: 700;
+        color: #000;
+        text-decoration: none;
+      }
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.1em;
+      }
+      h1 {
+        font-size: 2.3em;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      p.overview {
+        font-size: 1.125em;
+        line-height: 1.75;
+        margin-bottom: 30px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 5px;
+      }
+      .project-links {
+        margin-top: 30px;
+        font-size: 1em;
+      }
+      .project-links a {
+        color: #0000cc;
+        text-decoration: underline;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .footer {
+        padding: 8px;
+        background-color: #e0e0e0;
+        font-size: 0.9em;
+        text-align: center;
+        margin-top: 40px;
+      }
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 1.6em;
+        }
+        .grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        p.overview {
+          font-size: 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Josh Davila</a>
+      <nav class="nav-links">
+        <a href="index.html">About</a>
+        <a href="works.html">Works</a>
+        <a href="writing.html">Writing</a>
+        <a href="other.html">Other</a>
+        <a href="bio.html">Bio</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Augmented Earth (Post-Photography)</h1>
+      <p class="overview">
+        An expansive, evolving archive of over 2,000 images reimagining nature through the lens of post-photographic AI. "Augmented Earth" explores what it means for nature to mimic the artist—where botanical forms, landscapes, and ecosystems are filtered through algorithmic perception. This body of work reflects on artificial beauty, digital ecology, and the shifting aesthetics of what we call "natural."
+      </p>
+
+      <div class="grid">
+        <img src="augmented-earth/image1.jpg" alt="Sample Image 1" />
+        <img src="augmented-earth/image2.jpg" alt="Sample Image 2" />
+        <img src="augmented-earth/image3.jpg" alt="Sample Image 3" />
+        <img src="augmented-earth/image4.jpg" alt="Sample Image 4" />
+        <img src="augmented-earth/image5.jpg" alt="Sample Image 5" />
+        <img src="augmented-earth/image6.jpg" alt="Sample Image 6" />
+        <img src="augmented-earth/image7.jpg" alt="Sample Image 7" />
+        <img src="augmented-earth/image8.jpg" alt="Sample Image 8" />
+        <img src="augmented-earth/image9.jpg" alt="Sample Image 9" />
+      </div>
+
+      <div class="project-links">
+        🔗 <a href="https://www.etsy.com/shop/AugmentedEarth" target="_blank">View prints on Etsy</a>
+        🔗 <a href="#" target="_blank">Coming soon: Augmented Earth NFT Project</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 Josh Davila. All rights reserved.</p>
+    </div>
+  </body>
+</html>

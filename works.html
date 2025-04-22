@@ -3,32 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Works | Josh Davila</title>
+  <title>Selected Projects | Josh Davila</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Merriweather', serif;
-      font-weight: 300;
       margin: 0;
       padding: 0;
       background-color: #ffffff;
       color: #000;
     }
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-    }
-    .header {
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 0;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
       border-bottom: 1px solid #ddd;
     }
     .logo {
       font-family: 'Dancing Script', cursive;
-      font-size: 3em;
+      font-size: 3.5em;
       font-weight: 700;
       color: #000;
       text-decoration: none;
@@ -42,97 +39,87 @@
       color: #000;
       font-size: 1.1em;
     }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
     h1 {
       font-size: 2em;
-      margin-top: 40px;
       margin-bottom: 20px;
     }
-    .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-    .project-card {
-      text-align: center;
+    .project {
+      flex: 1 1 300px;
       border: 1px solid #ccc;
-      padding: 15px;
       border-radius: 8px;
-      transition: box-shadow 0.3s;
+      padding: 15px;
+      text-align: center;
     }
-    .project-card:hover {
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .project-card img {
+    .project img {
       width: 100%;
-      height: auto;
-      max-height: 250px;
-      object-fit: cover;
-      border-radius: 4px;
-    }
-    .project-card h2 {
-      margin: 15px 0 10px;
-      font-size: 1.4em;
-    }
-    .project-card p {
-      font-size: 0.95em;
-      line-height: 1.5;
+      max-width: 300px;
+      border-radius: 5px;
+      margin-bottom: 10px;
     }
     .footer {
-      text-align: center;
-      font-size: 0.9em;
-      padding: 20px;
+      padding: 8px;
       background-color: #e0e0e0;
+      font-size: 0.9em;
+      text-align: center;
       margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <a href="index.html" class="logo">Josh Davila</a>
-      <nav class="nav-links">
-        <a href="index.html">About</a>
-        <a href="works.html">Works</a>
-        <a href="writing.html">Writing</a>
-        <a href="other.html">Other</a>
-        <a href="bio.html">Bio</a>
-      </nav>
-    </header>
+  <header>
+    <a href="index.html" class="logo">Josh Davila</a>
+    <nav class="nav-links">
+      <a href="index.html">About</a>
+      <a href="works.html">Works</a>
+      <a href="writing.html">Writing</a>
+      <a href="other.html">Other</a>
+      <a href="bio.html">Bio</a>
+    </nav>
+  </header>
 
+  <div class="container">
     <h1>Selected Projects</h1>
-    <div class="project-grid">
-      <div class="project-card">
+    <div class="projects">
+      <div class="project">
         <a href="vqgan.html">
-          <img src="images/vqgan-preview.jpg" alt="VQGAN Works Preview">
+          <img src="vqgan/defiance.jpg" alt="VQGAN Works Preview">
         </a>
         <h2>VQGAN Works</h2>
         <p>Early works exploring AI and CLIP-guided diffusion. Many works fall into the category of post-photography.</p>
         <a href="vqgan.html">View Project →</a>
       </div>
-
-      <div class="project-card">
+      <div class="project">
         <a href="fragments.html">
-          <img src="images/fragments-preview.jpg" alt="Fragments of Humanity Preview">
+          <img src="fragments/human14.png" alt="Fragments of Humanity Preview">
         </a>
         <h2>Fragments of Humanity</h2>
         <p>A visual exploration of vulnerability and fractured identity, created through a blend of photography and AI.</p>
         <a href="fragments.html">View Project →</a>
       </div>
+      <div class="project">
+        <a href="augmented-earth.html">
+          <img src="augmented/1096.png" alt="Augmented Earth Preview">
+        </a>
+        <h2>Augmented Earth</h2>
+        <p>A large-scale, post-photographic AI project reimagining nature as if technology were mimicking human artistic intent. Over 2000 works created in dialogue with organic forms.</p>
+        <a href="augmented-earth.html">View Project →</a>
+      </div>
     </div>
-    
-    <div class="project-card">
-  <a href="augmented-earth.html">
-    <img src="images/augmented-earth-preview.jpg" alt="Augmented Earth Preview">
-  </a>
-  <h2>Augmented Earth</h2>
-  <p>A large-scale, post-photographic AI project reimagining nature as if technology were mimicking human artistic intent. Over 2000 works created in dialogue with organic forms.</p>
-  <a href="augmented-earth.html">View Project →</a>
-</div>
+  </div>
 
-    <div class="footer">
-      <p>&copy; 2025 Josh Davila. All rights reserved.</p>
-    </div>
+  <div class="footer">
+    <p>&copy; 2025 Josh Davila. All rights reserved.</p>
   </div>
 </body>
 </html>

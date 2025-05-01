@@ -1,179 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Augmented Earth | Josh Davila</title>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
-   <style>
-  /* GLOBAL STYLES */
-  body {
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #000;
-    overflow-x: hidden;
-  }
-
-  .container {
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
-    max-width: 1200px;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .logo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 3.5em;
-    font-weight: 700;
-    color: #000;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: auto;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 20px;
-  }
-
-  .nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.1em;
-    padding: 5px;
-    white-space: nowrap;
-  }
-
-  h1 {
-    font-size: 2.3em;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-    font-weight: 700;
-  }
-
-  p {
-    font-size: 1.125em;
-    line-height: 1.75;
-    margin-bottom: 1em;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-
-  .grid img {
-    width: 100%;
-    border-radius: 5px;
-  }
-
-  .project-links {
-    margin-top: 30px;
-    font-size: 1em;
-  }
-
-  .project-links a {
-    color: #0000cc;
-    text-decoration: underline;
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .footer {
-    padding: 8px;
-    background-color: #e0e0e0;
-    font-size: 0.9em;
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  /* MOBILE FIXES */
-  @media screen and (max-width: 768px) {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Augmented Earth | Josh Davila</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      font-size: 16px;
+    }
+    body {
+      font-family: 'Merriweather', serif;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000;
+      overflow-x: hidden;
+    }
     header {
-      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      text-align: center;
+      padding: 20px 0;
+      max-width: 1200px;
+      margin: auto;
+      border-bottom: 1px solid #ddd;
     }
-
     .logo {
-      font-size: 2.5em;
+      font-family: 'Dancing Script', cursive;
+      font-size: 3.5em;
+      font-weight: 700;
+      color: #000;
+      text-decoration: none;
+      margin-left: 20px;
     }
-
-    .grid {
-      grid-template-columns: 1fr;
-    }
-
     .nav-links {
-      flex-wrap: wrap;
-      justify-content: center;
-      text-align: center;
-      gap: 12px;
-      padding: 10px;
+      display: flex;
+      gap: 20px;
+      margin-right: 20px;
     }
-
     .nav-links a {
-      font-size: 1em;
+      text-decoration: none;
+      color: #000;
+      font-size: 1.1em;
       padding: 5px;
     }
-    </style>
-  </head>
-  <body>
-    <header>
-      <a href="index.html" class="logo">Josh Davila</a>
-      <nav class="nav-links">
-        <a href="index.html">About</a>
-        <a href="works.html">Works</a>
-        <a href="writing.html">Writing</a>
-        <a href="support.html">Support</a>
-        <a href="bio.html">Bio</a>
-      </nav>
-    </header>
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 2em;
+      font-weight: 700;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1em;
+      line-height: 1.75;
+      margin-bottom: 1em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .project-links {
+      margin-top: 30px;
+      font-size: 1em;
+    }
+    .project-links a {
+      color: #0000cc;
+      text-decoration: underline;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .footer {
+      padding: 8px;
+      background-color: #e0e0e0;
+      font-size: 0.9em;
+      text-align: center;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 1.6em;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">Josh Davila</a>
+    <nav class="nav-links">
+      <a href="index.html">About</a>
+      <a href="works.html">Works</a>
+      <a href="writing.html">Writing</a>
+      <a href="other.html">Other</a>
+      <a href="bio.html">Bio</a>
+    </nav>
+  </header>
 
-    <div class="container">
-      <h1>Augmented Earth (Post-Photography)</h1>
-      <p class="overview">
-               <strong>Augmented Earth</strong> is an expansive, evolving archive of over 2,000 images reimagining nature through the lens of post-photographic AI. Each work begins with a photograph of the natural world, captured with a Nikon DSLR, and corresponding digital artworks of abstract textures and color fields. These are then presented to an AI, instructed to generate a new image as if nature were learning to mimic human art.
-        <br><br>
-        The resulting visuals are not photographs, yet they could be. They are not purely digital paintings, nor purely AI outputs—but something hybrid, layered, and uncanny. This liminal quality gives the work a surreal edge: familiar landscapes filtered through algorithmic dreams. <em>Augmented Earth</em> explores artificial beauty, digital ecology, and what it means to see nature when its image is reconstructed by machines.
-      </p>
+  <div class="container">
+    <h1>Augmented Earth (Post-Photography)</h1>
+    <p>
+      <strong>Augmented Earth</strong> is an expansive, evolving archive of over 2,000 images reimagining nature through the lens of post-photographic AI. Each work begins with a photograph of the natural world, captured with a Nikon DSLR, and corresponding digital artworks of abstract textures and color fields. These are then presented to an AI, instructed to generate a new image as if nature were learning to mimic human art.
+    </p>
+    <p>
+      The resulting visuals are not photographs, yet they could be. They are not purely digital paintings, nor purely AI outputs—but something hybrid, layered, and uncanny. This liminal quality gives the work a surreal edge: familiar landscapes filtered through algorithmic dreams. <em>Augmented Earth</em> explores artificial beauty, digital ecology, and what it means to see nature when its image is reconstructed by machines.
+    </p>
 
-      <div class="grid">
-        <img src="augmented/283.png" alt="Sample Image 1" />
-        <img src="augmented/1580.png" alt="Sample Image 2" />
-        <img src="augmented/327.png" alt="Sample Image 3" />
-        <img src="augmented/780.png" alt="Sample Image 4" />
-        <img src="augmented/1096.png" alt="Sample Image 5" />
-        <img src="augmented/911.png" alt="Sample Image 6" />
-        <img src="augmented/1105.png" alt="Sample Image 7" />
-        <img src="augmented/1510.png" alt="Sample Image 8" />
-        <img src="augmented/312.png" alt="Sample Image 9" />
-        <img src="augmented/1742.png" alt="Sample Image 10" />
-        <img src="augmented/1679.png" alt="Sample Image 11" />
-        <img src="augmented/1753.png" alt="Sample Image 12" />
-      </div>
-
-      <div class="project-links">
-        🔗 <a href="https://www.etsy.com/shop/AugmentedEarth" target="_blank">View prints on Etsy</a>
-        🔗 <a href="#" target="_blank">Coming soon: Augmented Earth NFT Project</a>
-      </div>
+    <div class="grid">
+      <img src="augmented/283.png" alt="Sample Image 1" />
+      <img src="augmented/1580.png" alt="Sample Image 2" />
+      <img src="augmented/327.png" alt="Sample Image 3" />
+      <img src="augmented/780.png" alt="Sample Image 4" />
+      <img src="augmented/1096.png" alt="Sample Image 5" />
+      <img src="augmented/911.png" alt="Sample Image 6" />
+      <img src="augmented/1105.png" alt="Sample Image 7" />
+      <img src="augmented/1510.png" alt="Sample Image 8" />
+      <img src="augmented/312.png" alt="Sample Image 9" />
+      <img src="augmented/1742.png" alt="Sample Image 10" />
+      <img src="augmented/1679.png" alt="Sample Image 11" />
+      <img src="augmented/1753.png" alt="Sample Image 12" />
     </div>
 
-    <div class="footer">
-      <p>&copy; 2025 Josh Davila. All rights reserved.</p>
+    <div class="project-links">
+      🔗 <a href="https://www.etsy.com/shop/AugmentedEarth" target="_blank">View prints on Etsy</a>
+      🔗 <a href="#" target="_blank">Coming soon: Augmented Earth NFT Project</a>
     </div>
-  </body>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Josh Davila. All rights reserved.</p>
+  </div>
+</body>
 </html>

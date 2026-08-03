@@ -1,0 +1,26 @@
+title: Josh Davila
+description: Artist, philosopher, veteran, and independent researcher examining institutional legitimacy, representation, agency, and technological power.
+url: "https://joshdavila.art"
+baseurl: ""
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /works/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - README.md
+  - docs
+  - "*.zip"

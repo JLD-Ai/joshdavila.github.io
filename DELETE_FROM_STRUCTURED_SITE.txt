@@ -1,0 +1,12 @@
+Delete these five flattened duplicates from the ROOT of the structured-site branch:
+
+default.html
+footer.html
+header.html
+project.html
+fragments-of-humanity.md
+
+Do not delete their correct counterparts in:
+_layouts/
+_includes/
+_projects/

@@ -13,7 +13,12 @@ description: Essays on AI governance, art, data ownership, labor, disclosure, an
   {% assign sorted_writings = site.data.writings | sort: "publication_year" | reverse %}
   {% for writing in sorted_writings %}
     <article class="article">
-      {% if writing.image %}<img src="{{ writing.image | relative_url }}" alt="Cover image for {{ writing.title }}">{% endif %}
+      {% if writing.image %}
+      <img src="{{ writing.image | relative_url }}"
+           alt="Cover image for {{ writing.title }}"
+           loading="lazy"
+           decoding="async">
+      {% endif %}
       <div>
         <p class="card-meta">{{ writing.publication_year }} · {{ writing.type }} · {{ writing.platform }}</p>
         <h2><a href="{{ writing.url }}" target="_blank" rel="noopener noreferrer">{{ writing.title }}</a></h2>

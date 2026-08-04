@@ -14,6 +14,7 @@
   role: exhibiting artist
   related_project: philosophical-abstractions
   featured: true
+  public: true
 
 - id: nft-los-angeles-2022
   title: NFT Los Angeles
@@ -28,6 +29,7 @@
   role: exhibiting artist
   related_project: null
   featured: false
+  public: true
 
 - id: nfc-lisbon-2024
   title: Non-Fungible Conference
@@ -41,6 +43,7 @@
   role: exhibiting artist
   related_project: null
   featured: true
+  public: true
 
 - id: outside-the-lens-2024
   title: Our Family, Our Story
@@ -55,6 +58,7 @@
   role: exhibiting artist
   related_project: null
   featured: true
+  public: true
 
 - id: 404-arts-2024
   title: 404 Arts Foundation
@@ -68,6 +72,7 @@
   role: artist
   related_project: null
   featured: false
+  public: false
 
 - id: alt-vision-2024
   title: ALT:VISION Magazine
@@ -81,6 +86,7 @@
   role: featured artist
   related_project: null
   featured: false
+  public: true
 
 - id: the-round-2024
   title: The Round
@@ -94,3 +100,4 @@
   role: artist
   related_project: null
   featured: false
+  public: false

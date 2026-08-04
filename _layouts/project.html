@@ -2,6 +2,8 @@
 layout: default
 ---
 {% assign record = site.data.projects | where: "slug", page.slug | first %}
+
+{% if record %}
 <section class="project-header">
   <p class="eyebrow">{{ record.project_type | join: " · " }}</p>
   <h1>{{ record.title }}</h1>
@@ -11,6 +13,11 @@ layout: default
     {% for medium in record.media %}<li>{{ medium }}</li>{% endfor %}
   </ul>
 </section>
+{% else %}
+<section class="project-header">
+  <h1>{{ page.title }}</h1>
+</section>
+{% endif %}
 
 <section class="project-statement">
   {{ content }}
@@ -23,11 +30,16 @@ layout: default
   {% for item in page.gallery %}
     <figure class="gallery-item {% if item.full %}full{% endif %}">
       {% if item.video %}
-      <video {% if item.controls %}controls{% endif %} loop muted playsinline aria-label="{{ item.alt }}">
+      <video {% if item.controls %}controls{% endif %}
+             loop muted playsinline preload="metadata"
+             aria-label="{{ item.alt }}">
         <source src="{{ item.src | relative_url }}" type="video/mp4">
       </video>
       {% else %}
-      <img src="{{ item.src | relative_url }}" alt="{{ item.alt }}">
+      <img src="{{ item.src | relative_url }}"
+           alt="{{ item.alt }}"
+           loading="lazy"
+           decoding="async">
       {% endif %}
       {% if item.caption %}<figcaption>{{ item.caption }}</figcaption>{% endif %}
     </figure>

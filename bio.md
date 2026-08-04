@@ -27,7 +27,9 @@ description: Biography, selected exhibitions, experience, and writing by Josh Da
       <h2>Selected exhibitions and features</h2>
       <ul>
       {% for exhibition in site.data.exhibitions %}
+        {% if exhibition.public %}
         <li>{{ exhibition.title }}, {{ exhibition.year }}{% if exhibition.city %} — {{ exhibition.city }}{% endif %}</li>
+        {% endif %}
       {% endfor %}
       </ul>
     </div>

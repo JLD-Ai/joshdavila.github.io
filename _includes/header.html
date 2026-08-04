@@ -1,9 +1,17 @@
 <header class="header">
-  <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
+  <a href="{{ '/' | relative_url }}" class="logo" aria-label="{{ site.title }} home">{{ site.title }}</a>
+
   <nav class="nav-links" aria-label="Primary navigation">
     {% for item in site.data.navigation %}
+      {% assign is_current = false %}
+      {% if item.url == "/" %}
+        {% if page.url == "/" %}{% assign is_current = true %}{% endif %}
+      {% elsif page.url == item.url or page.url contains item.url %}
+        {% assign is_current = true %}
+      {% endif %}
+
       <a href="{{ item.url | relative_url }}"
-         {% if page.url == item.url %}aria-current="page"{% endif %}>
+         {% if is_current %}aria-current="page"{% endif %}>
         {{ item.label }}
       </a>
     {% endfor %}

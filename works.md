@@ -13,9 +13,16 @@ description: Selected art projects and exhibitions by Josh Davila.
   {% for project in site.data.projects %}
     {% if project.status != "needs assets" %}
     <article class="card">
-      {% if project.hero_image %}<img class="card-media" src="{{ project.hero_image | relative_url }}" alt="{{ project.hero_alt }}">{% endif %}
+      {% if project.hero_image %}
+      <img class="card-media"
+           src="{{ project.hero_image | relative_url }}"
+           alt="{{ project.hero_alt }}"
+           loading="lazy"
+           decoding="async">
+      {% endif %}
       <div class="card-body">
-        <p class="card-meta">{{ project.date_display }} · {{ project.status }}</p>
+        {% assign public_status = project.status | replace: "_", " " | capitalize %}
+        <p class="card-meta">{{ project.date_display }} · {{ public_status }}</p>
         <h2>{{ project.title }}</h2>
         <p>{{ project.summary }}</p>
         {% if project.page_url %}<a class="text-link" href="{{ project.page_url | relative_url }}">View project →</a>{% endif %}

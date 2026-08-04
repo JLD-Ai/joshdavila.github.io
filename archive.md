@@ -6,7 +6,7 @@ description: Structured archive of Josh Davila's projects, writing, exhibitions,
 <section class="hero">
   <p class="eyebrow">Structured archive</p>
   <h1>One source of truth for the entire practice.</h1>
-  <p class="lede">The archive currently records {{ site.data.profile.archive.distinct_works }} distinct philosophical writings alongside public essays, projects, exhibitions, and professional milestones.</p>
+  <p class="lede">The archive currently records {{ site.data.profile.archive.distinct_works }} distinct intellectual works alongside public essays, projects, exhibitions, and professional milestones.</p>
 </section>
 
 <section class="section">
@@ -15,7 +15,7 @@ description: Structured archive of Josh Davila's projects, writing, exhibitions,
       <h2>Projects</h2>
       <ul>
       {% for project in site.data.projects %}
-        <li>{{ project.title }} — {{ project.status }}</li>
+        <li>{{ project.title }} — {{ project.status | replace: "_", " " }}</li>
       {% endfor %}
       </ul>
     </div>
@@ -23,7 +23,7 @@ description: Structured archive of Josh Davila's projects, writing, exhibitions,
       <h2>Public writings</h2>
       <ul>
       {% for writing in site.data.writings %}
-        <li><a href="{{ writing.url }}">{{ writing.title }}</a></li>
+        <li><a href="{{ writing.url }}" target="_blank" rel="noopener noreferrer">{{ writing.title }}</a></li>
       {% endfor %}
       </ul>
     </div>

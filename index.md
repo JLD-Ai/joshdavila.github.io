@@ -24,7 +24,13 @@ description: Artist, philosopher, veteran, and independent researcher examining 
   {% assign featured = site.data.projects | where: "priority", "flagship" %}
   {% for project in featured %}
     <article class="card">
-      {% if project.hero_image %}<img class="card-media" src="{{ project.hero_image | relative_url }}" alt="{{ project.hero_alt }}">{% endif %}
+      {% if project.hero_image %}
+      <img class="card-media"
+           src="{{ project.hero_image | relative_url }}"
+           alt="{{ project.hero_alt }}"
+           loading="lazy"
+           decoding="async">
+      {% endif %}
       <div class="card-body">
         <p class="card-meta">{{ project.date_display }}</p>
         <h3>{{ project.title }}</h3>

@@ -6,7 +6,7 @@ description: Chronological record of Josh Davila's projects, exhibitions, public
 <section class="hero">
   <p class="eyebrow">Career timeline</p>
   <h1>A chronological record generated from the master data.</h1>
-  <p class="lede">This page can expand as records are verified. It is generated from project, writing, exhibition, and experience data rather than edited manually.</p>
+  <p class="lede">This page expands as records are verified. It is generated from project, writing, exhibition, and experience data rather than edited manually.</p>
 </section>
 
 <section class="section">
@@ -14,21 +14,44 @@ description: Chronological record of Josh Davila's projects, exhibitions, public
 {% for year in years %}
   <h2>{{ year }}</h2>
   <ul class="timeline">
+
   {% for project in site.data.projects %}
-    {% if project.start_year == year or project.end_year == year %}
-      <li><strong>Project:</strong> {{ project.title }} — {{ project.summary }}</li>
+    {% assign project_start_year = project.start_year | append: "" %}
+    {% assign project_end_year = project.end_year | append: "" %}
+    {% if project_start_year == year or project_end_year == year %}
+      <li>
+        <strong>Project:</strong>
+        {% if project.page_url %}
+          <a href="{{ project.page_url | relative_url }}">{{ project.title }}</a>
+        {% else %}
+          {{ project.title }}
+        {% endif %}
+        — {{ project.summary }}
+      </li>
     {% endif %}
   {% endfor %}
+
   {% for writing in site.data.writings %}
-    {% if writing.publication_year == year %}
-      <li><strong>Writing:</strong> <a href="{{ writing.url }}">{{ writing.title }}</a></li>
+    {% assign writing_year = writing.publication_year | append: "" %}
+    {% if writing_year == year %}
+      <li>
+        <strong>Writing:</strong>
+        <a href="{{ writing.url }}" target="_blank" rel="noopener noreferrer">{{ writing.title }}</a>
+      </li>
     {% endif %}
   {% endfor %}
+
   {% for exhibition in site.data.exhibitions %}
-    {% if exhibition.year == year %}
-      <li><strong>{{ exhibition.event_type | capitalize }}:</strong> {{ exhibition.title }}{% if exhibition.city %}, {{ exhibition.city }}{% endif %}</li>
+    {% assign exhibition_year = exhibition.year | append: "" %}
+    {% if exhibition_year == year %}
+      <li>
+        <strong>{{ exhibition.event_type | capitalize }}:</strong>
+        {{ exhibition.title }}
+        {% if exhibition.city %}, {{ exhibition.city }}{% endif %}
+      </li>
     {% endif %}
   {% endfor %}
+
   </ul>
 {% endfor %}
 </section>

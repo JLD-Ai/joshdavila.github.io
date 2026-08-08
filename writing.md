@@ -15,7 +15,7 @@ description: Essays on AI governance, art, data ownership, labor, disclosure, an
     <article class="article">
       {% if writing.image %}
       <img src="{{ writing.image | relative_url }}"
-           alt="Cover image for {{ writing.title }}"
+           alt="Cover image for {{ writing.title | escape }}"
            loading="lazy"
            decoding="async">
       {% endif %}

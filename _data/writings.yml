@@ -108,6 +108,82 @@
   image: reflecting.png
   featured: false
 
+- id: ai-blockchain-problems
+  title: "AI Solutions for Common Blockchain Problems"
+  publication_date: null
+  publication_year: 2023
+  status: published
+  type: essay
+  platform: Medium
+  themes:
+    - blockchain systems
+    - scalability
+    - security
+    - sustainability
+  summary: >-
+    An exploration of how AI might address blockchain scalability, security,
+    efficiency, and environmental cost.
+  url: https://medium.com/@joshdavila.art/ai-solutions-for-common-blockchain-problems-7e4724adb62f
+  image: blockchain-problems.png
+  featured: false
+
+- id: universal-food-access
+  title: "AI and Blockchain Revolution: Ensuring Universal Access to Food"
+  publication_date: 2023-09-26
+  publication_year: 2023
+  status: published
+  type: systems proposal
+  platform: Medium
+  themes:
+    - food access
+    - universal provision
+    - blockchain systems
+    - institutional design
+  summary: >-
+    A speculative proposal for using AI-assisted infrastructure to support
+    universal food provision rather than private accumulation.
+  url: https://medium.com/@joshdavila.art/ai-and-blockchain-revolution-ensuring-universal-access-to-food-dfbce4a39e94
+  image: blockchain-revolution.png
+  featured: false
+
+- id: congressional-ai-appeal
+  title: "Urgent Appeal to Congress: Embracing the Healing Power of Artificial Intelligence"
+  publication_date: 2023-09-11
+  publication_year: 2023
+  status: published
+  type: open letter
+  platform: Medium
+  themes:
+    - public health
+    - veterans
+    - creative practice
+    - public investment
+  summary: >-
+    An open letter connecting AI-assisted creativity, veterans, mental health,
+    public investment, and the priority of reducing suffering.
+  url: https://medium.com/@joshdavila.art/urgent-appeal-to-congress-embracing-the-healing-power-of-artificial-intelligence-a412740d297
+  image: congress.png
+  featured: false
+
+- id: scooby-doo-ethics
+  title: "The Intersection of Art, AI, and Ethics: Examining the Scooby-Doo Fan Art Controversy"
+  publication_date: 2023-09-12
+  publication_year: 2023
+  status: published
+  type: case study
+  platform: Medium
+  themes:
+    - fan art
+    - appropriation
+    - authorship
+    - proportional response
+  summary: >-
+    A case study of AI-generated fan art, digital appropriation, authorship,
+    and proportional institutional response.
+  url: https://medium.com/@joshdavila.art/the-intersection-of-art-ai-and-ethics-examining-the-scooby-doo-fan-art-controversy-6f3308f45689
+  image: scooby-doo.png
+  featured: false
+
 - id: ethical-disclosure
   title: "The Ethical Imperative of Disclosing the Use of AI in AI-Generated Art"
   publication_date: 2023-05-23

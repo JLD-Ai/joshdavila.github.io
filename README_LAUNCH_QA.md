@@ -10,6 +10,7 @@ This patch is for the `structured-site` branch only. It does not deploy the site
 - adds a useful 404 page, robots file, and sitemap;
 - improves keyboard focus, reduced-motion support, mobile layout, navigation state, and image loading;
 - keeps records marked private or `needs verification` out of generated public pages;
+- reconciles the ten-work mature AI corpus as a subset of twelve selected public writings;
 - changes the archive description from “62 philosophical writings” to the more accurate “62 distinct intellectual works”;
 - humanizes machine-readable project status labels.
 
@@ -35,7 +36,6 @@ After committing the patch:
 
 Do not merge into `main` yet unless these are resolved:
 
-1. The public writings data contains eight records while the intellectual archive identifies ten mature AI-era works. Reconcile the scope and the two omitted records without assuming all archive items belong on the public Writing page.
-2. Confirm the preferred public wording for participation in private DALL-E 3 testing. The record remains non-public until approved.
-3. Verify the relationship descriptions for 404 Arts Foundation and The Round before setting their `public` values to `true`.
-4. Review the generated site visually after the build succeeds.
+1. Confirm the preferred public wording for participation in private DALL-E 3 testing. The record remains non-public until approved.
+2. Verify the relationship descriptions for 404 Arts Foundation and The Round before setting their `public` values to `true`.
+3. Review the generated site visually after the build succeeds.

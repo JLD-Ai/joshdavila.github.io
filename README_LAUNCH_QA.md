@@ -32,12 +32,11 @@ After committing the patch:
 4. A green check means Jekyll built successfully.
 5. The workflow uploads `_site` as an artifact but contains no deployment job.
 
-## Launch gates still open
+## Claim gates resolved
 
-Do not merge into `main` yet unless these are resolved:
-
-1. Confirm the preferred public wording for participation in private DALL-E 3 testing. The record remains non-public until approved.
-2. Verify the relationship descriptions for 404 Arts Foundation and The Round before setting their `public` values to `true`.
+- OpenAI participation is recorded as completed DALL-E 3 closed beta testing.
+- 404 Arts is recorded as an NFT project and publication founded by Patrick Amadon, with Josh Davila included as a featured artist.
+- THE ROUND is recorded as a Threads-native publication, with Josh Davila included as a featured artist.
 
 ## Visual QA completed
 

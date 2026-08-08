@@ -18,16 +18,18 @@ description: Chronological record of Josh Davila's projects, exhibitions, public
   {% for project in site.data.projects %}
     {% assign project_start_year = project.start_year | append: "" %}
     {% assign project_end_year = project.end_year | append: "" %}
-    {% if project_start_year == year or project_end_year == year %}
-      <li>
-        <strong>Project:</strong>
-        {% if project.page_url %}
-          <a href="{{ project.page_url | relative_url }}">{{ project.title }}</a>
-        {% else %}
-          {{ project.title }}
-        {% endif %}
-        — {{ project.summary }}
-      </li>
+    {% if project.public != false %}
+      {% if project_start_year == year or project_end_year == year %}
+        <li>
+          <strong>Project:</strong>
+          {% if project.page_url %}
+            <a href="{{ project.page_url | relative_url }}">{{ project.title }}</a>
+          {% else %}
+            {{ project.title }}
+          {% endif %}
+          — {{ project.summary }}
+        </li>
+      {% endif %}
     {% endif %}
   {% endfor %}
 

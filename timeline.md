@@ -43,7 +43,7 @@ description: Chronological record of Josh Davila's projects, exhibitions, public
 
   {% for exhibition in site.data.exhibitions %}
     {% assign exhibition_year = exhibition.year | append: "" %}
-    {% if exhibition_year == year %}
+    {% if exhibition.public and exhibition_year == year %}
       <li>
         <strong>{{ exhibition.event_type | capitalize }}:</strong>
         {{ exhibition.title }}

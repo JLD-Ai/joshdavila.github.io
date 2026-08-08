@@ -9,7 +9,7 @@ This patch is for the `structured-site` branch only. It does not deploy the site
 - adds redirects from the current `.html` URLs to the new clean URLs;
 - adds a useful 404 page, robots file, and sitemap;
 - improves keyboard focus, reduced-motion support, mobile layout, navigation state, and image loading;
-- prevents two records marked `needs verification` from appearing in the public CV and timeline;
+- keeps records marked private or `needs verification` out of generated public pages;
 - changes the archive description from “62 philosophical writings” to the more accurate “62 distinct intellectual works”;
 - humanizes machine-readable project status labels.
 
@@ -20,12 +20,6 @@ The existing `CNAME` file is already correct and contains:
 `joshdavila.art`
 
 Do not delete or replace it. GitHub notes that the custom domain must also remain configured in repository Settings → Pages; the CNAME file alone does not control that setting.
-
-## Manual deletion required
-
-After uploading this patch, delete the five root-level duplicates listed in:
-
-`DELETE_FROM_STRUCTURED_SITE.txt`
 
 ## Build check
 
@@ -41,7 +35,7 @@ After committing the patch:
 
 Do not merge into `main` yet unless these are resolved:
 
-1. The public writings data currently contains fewer records than the archive’s stated count of ten mature AI-era writings. Reconcile this during the writing audit.
-2. Confirm the preferred public wording for participation in private DALL-E 3 testing.
+1. The public writings data contains eight records while the intellectual archive identifies ten mature AI-era works. Reconcile the scope and the two omitted records without assuming all archive items belong on the public Writing page.
+2. Confirm the preferred public wording for participation in private DALL-E 3 testing. The record remains non-public until approved.
 3. Verify the relationship descriptions for 404 Arts Foundation and The Round before setting their `public` values to `true`.
 4. Review the generated site visually after the build succeeds.

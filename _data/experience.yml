@@ -16,7 +16,7 @@
   status: completed
   type: private product testing
   verification_status: approved wording needed
-  public: true
+  public: false
 
 - id: generative-ai-practice
   organization: Independent

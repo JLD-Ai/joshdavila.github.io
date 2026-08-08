@@ -1,0 +1,103 @@
+- id: philosophical-abstractions
+  title: Philosophical Abstractions
+  year: 2022
+  start_date: 2022-09
+  end_date: 2022-11
+  date_status: approximate
+  city: San Diego
+  state: California
+  country: United States
+  venue: San Diego Central Library
+  institution: San Diego Commission for Arts and Culture
+  institution_relationship: needs verification
+  event_type: solo exhibition
+  role: exhibiting artist
+  related_project: philosophical-abstractions
+  featured: true
+  public: true
+
+- id: nft-los-angeles-2022
+  title: NFT Los Angeles
+  year: 2022
+  city: Los Angeles
+  state: California
+  country: United States
+  venue: null
+  institution: NFT Los Angeles
+  institution_relationship: event
+  event_type: group presentation
+  role: exhibiting artist
+  related_project: null
+  featured: false
+  public: true
+
+- id: nfc-lisbon-2024
+  title: Non-Fungible Conference
+  year: 2024
+  city: Lisbon
+  country: Portugal
+  venue: null
+  institution: Non-Fungible Conference
+  institution_relationship: event
+  event_type: group presentation
+  role: exhibiting artist
+  related_project: null
+  featured: true
+  public: true
+
+- id: outside-the-lens-2024
+  title: Our Family, Our Story
+  year: 2024
+  city: San Diego
+  state: California
+  country: United States
+  venue: Outside the Lens
+  institution: Outside the Lens
+  institution_relationship: presenter
+  event_type: group exhibition
+  role: exhibiting artist
+  related_project: null
+  featured: true
+  public: true
+
+- id: 404-arts-2024
+  title: 404 Arts Foundation
+  year: 2024
+  city: null
+  country: null
+  venue: 404 Arts Foundation
+  institution: 404 Arts Foundation
+  institution_relationship: needs verification
+  event_type: feature or exhibition
+  role: artist
+  related_project: null
+  featured: false
+  public: false
+
+- id: alt-vision-2024
+  title: ALT:VISION Magazine
+  year: 2024
+  city: null
+  country: null
+  venue: null
+  institution: ALT:VISION Magazine
+  institution_relationship: publication feature
+  event_type: publication feature
+  role: featured artist
+  related_project: null
+  featured: false
+  public: true
+
+- id: the-round-2024
+  title: The Round
+  year: 2024
+  city: null
+  country: null
+  venue: null
+  institution: The Round
+  institution_relationship: needs verification
+  event_type: feature or exhibition
+  role: artist
+  related_project: null
+  featured: false
+  public: false

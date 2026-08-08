@@ -1,0 +1,19 @@
+---
+layout: null
+permalink: /sitemap.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign core_urls = "/,/works/,/research/,/writing/,/timeline/,/archive/,/bio/,/support/" | split: "," %}
+  {% for url in core_urls %}
+  <url>
+    <loc>{{ url | absolute_url | xml_escape }}</loc>
+  </url>
+  {% endfor %}
+  {% for project in site.projects %}
+  <url>
+    <loc>{{ project.url | absolute_url | xml_escape }}</loc>
+  </url>
+  {% endfor %}
+</urlset>

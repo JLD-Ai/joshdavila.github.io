@@ -1,0 +1,32 @@
+title: Josh Davila
+description: Artist, philosopher, veteran, and independent researcher examining institutional legitimacy, representation, agency, and technological power.
+url: "https://joshdavila.art"
+baseurl: ""
+lang: en-US
+timezone: America/Los_Angeles
+author: Josh Davila
+repository: JLD-Ai/joshdavila.github.io
+permalink: pretty
+
+collections:
+  projects:
+    output: true
+    permalink: /works/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+exclude:
+  - README.md
+  - README_LAUNCH_QA.md
+  - DELETE_FROM_STRUCTURED_SITE.txt
+  - docs
+  - "*.zip"

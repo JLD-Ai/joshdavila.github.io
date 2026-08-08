@@ -1,0 +1,192 @@
+- id: philosophical-abstractions
+  title: Philosophical Abstractions
+  slug: philosophical-abstractions
+  status: published
+  priority: flagship
+  start_year: 2022
+  end_year: 2022
+  date_display: September–November 2022
+  project_type:
+    - exhibition
+    - generative art
+    - philosophy
+  themes:
+    - logic
+    - fallacies
+    - machine interpretation
+    - representation
+  media:
+    - VQGAN
+    - CLIP-guided diffusion
+    - image-to-image generation
+  summary: >-
+    An exhibition using early generative systems to translate logic,
+    fallacies, rules, and other abstract philosophical concepts into visual form.
+  central_question: What might an abstract idea look like?
+  hero_image: concept-logic.jpg
+  hero_alt: The Concept of Logic by Josh Davila
+  venue: San Diego Central Library
+  institutional_credit_status: needs verification
+  original_duration: Approximately ten days
+  extended_duration: Approximately two months
+  provenance_identity: N1FTEY
+  page_url: /works/philosophical-abstractions/
+  external_links:
+    - label: Read the retrospective
+      url: https://medium.com/@joshdavila.art/reflecting-on-philosophical-abstractions-a-milestone-in-ai-art-history-28f89caff390
+    - label: The Concept of Logic provenance
+      url: https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/3
+
+- id: augmented-earth
+  title: Augmented Earth
+  slug: augmented-earth
+  alternate_titles:
+    - Augmented Nature
+  title_relationship_status: needs verification
+  status: active
+  priority: flagship
+  start_year: null
+  end_year: null
+  date_display: Ongoing
+  project_type:
+    - post-photography
+    - generative art
+    - photography
+  themes:
+    - nature
+    - digital ecology
+    - machine interpretation
+    - artificial beauty
+  media:
+    - Nikon DSLR photography
+    - digital abstraction
+    - generative image systems
+  work_count: 2000+
+  work_count_status: approximate
+  summary: >-
+    An evolving post-photographic archive asking what nature becomes when
+    photography, abstraction, and machine interpretation are folded into one another.
+  central_question: >-
+    Can a machine reconstruct nature without also reconstructing human ideas
+    about nature?
+  hero_image: augmented/1324.png
+  hero_alt: Artwork from Augmented Earth by Josh Davila
+  page_url: /works/augmented-earth/
+  external_links:
+    - label: Available prints
+      url: https://www.etsy.com/shop/AugmentedEarth
+
+- id: fragments-of-humanity
+  title: Fragments of Humanity
+  slug: fragments-of-humanity
+  alternate_titles:
+    - Humanized-Cubism
+  title_relationship_status: needs verification
+  status: completed
+  priority: major
+  start_year: 2024
+  end_year: 2024
+  date_display: "2024"
+  project_type:
+    - photography
+    - generative art
+  themes:
+    - embodiment
+    - appearance
+    - empathy
+    - fractured identity
+    - recognition
+  media:
+    - photography
+    - generative transformation
+  work_count: 45
+  summary: >-
+    A study of the human figure under conditions of distortion, asking how
+    appearance governs recognition, empathy, and social belonging.
+  hero_image: fragments/Human14.png
+  hero_alt: Artwork from Fragments of Humanity by Josh Davila
+  page_url: /works/fragments-of-humanity/
+  external_links:
+    - label: Recorded digital project
+      url: https://www.transient.xyz/mint/fragments-of-humanity
+
+- id: vqgan-works
+  title: VQGAN Works
+  slug: vqgan-works
+  status: archived
+  priority: historical
+  start_year: 2021
+  end_year: 2022
+  date_display: 2021–2022
+  project_type:
+    - early generative archive
+    - post-photography
+  themes:
+    - machine interpretation
+    - language
+    - provenance
+    - early AI art
+  media:
+    - VQGAN
+    - CLIP
+    - photography
+    - drawing
+  summary: >-
+    An archival selection from Davila's earliest sustained experiments with
+    neural image generation.
+  hero_image: vqgan-media/chupacabra.gif
+  hero_alt: Animated early VQGAN artwork by Josh Davila
+  provenance_identity: N1FTEY
+  page_url: /works/vqgan-works/
+
+- id: synonyms-antonyms
+  title: Synonyms & Antonyms
+  slug: synonyms-antonyms
+  status: needs assets
+  priority: major
+  start_year: null
+  end_year: null
+  date_display: Ongoing
+  project_type:
+    - language
+    - generative art
+  themes:
+    - linguistics
+    - semantic interpretation
+    - word relationships
+    - machine meaning
+  summary: >-
+    An ongoing investigation of language through AI interpretations of words
+    and conceptual relationships.
+  page_url: null
+  missing:
+    - representative image inventory
+    - confirmed date range
+    - final method statement
+    - publication or exhibition history
+
+- id: solitude
+  title: Solitude
+  slug: solitude
+  status: needs assets
+  priority: major
+  start_year: null
+  end_year: null
+  date_display: Date to verify
+  project_type:
+    - personal narrative
+    - generative art
+  themes:
+    - trauma
+    - abuse
+    - isolation
+    - memory
+  summary: A personal reflection on trauma, abuse, isolation, and survival.
+  page_url: null
+  public: false
+  missing:
+    - representative image inventory
+    - confirmed date range
+    - intended public disclosure level
+    - medium and process
+    - active or completed status

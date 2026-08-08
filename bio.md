@@ -29,7 +29,7 @@ description: Biography, selected exhibitions, experience, and writing by Josh Da
       <ul>
       {% for exhibition in site.data.exhibitions %}
         {% if exhibition.public %}
-        <li>{{ exhibition.title }}, {{ exhibition.year }}{% if exhibition.city %} — {{ exhibition.city }}{% endif %}</li>
+        <li>{{ exhibition.title }}, {{ exhibition.year }}{% if exhibition.city %} — {{ exhibition.city }}{% endif %}{% if exhibition.public_note %} — {{ exhibition.public_note }}{% endif %}</li>
         {% endif %}
       {% endfor %}
       </ul>

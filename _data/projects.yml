@@ -183,6 +183,7 @@
     - memory
   summary: A personal reflection on trauma, abuse, isolation, and survival.
   page_url: null
+  public: false
   missing:
     - representative image inventory
     - confirmed date range

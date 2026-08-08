@@ -15,7 +15,9 @@ description: Structured archive of Josh Davila's projects, writing, exhibitions,
       <h2>Projects</h2>
       <ul>
       {% for project in site.data.projects %}
+        {% if project.public != false %}
         <li>{{ project.title }} — {{ project.status | replace: "_", " " }}</li>
+        {% endif %}
       {% endfor %}
       </ul>
     </div>

@@ -11,7 +11,7 @@ description: Selected art projects and exhibitions by Josh Davila.
 <section class="section">
   <div class="card-grid">
   {% for project in site.data.projects %}
-    {% if project.status != "needs assets" %}
+    {% if project.status != "needs assets" and project.public != false %}
     <article class="card">
       {% if project.hero_image %}
       <img class="card-media"
@@ -36,7 +36,7 @@ description: Selected art projects and exhibitions by Josh Davila.
 <section class="section callout">
   <h2>Projects in development</h2>
   {% for project in site.data.projects %}
-    {% if project.status == "needs assets" %}
+    {% if project.status == "needs assets" and project.public != false %}
       <h3>{{ project.title }}</h3>
       <p>{{ project.summary }}</p>
     {% endif %}

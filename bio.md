@@ -5,6 +5,7 @@ description: Biography, selected exhibitions, experience, and writing by Josh Da
 ---
 <section class="section">
   <p class="eyebrow">Biography</p>
+  <h1>Biography and CV</h1>
   <p class="lede">{{ site.data.profile.one_line_bio }}</p>
   <p>{{ site.data.profile.long_bio }}</p>
 </section>

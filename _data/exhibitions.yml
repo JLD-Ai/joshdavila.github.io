@@ -61,18 +61,21 @@
   public: true
 
 - id: 404-arts-2024
-  title: 404 Arts Foundation
+  title: 404 Arts
   year: 2024
   city: null
   country: null
-  venue: 404 Arts Foundation
-  institution: 404 Arts Foundation
-  institution_relationship: needs verification
-  event_type: feature or exhibition
-  role: artist
+  venue: null
+  institution: 404 Arts
+  institution_relationship: NFT project and publication
+  event_type: publication feature
+  role: featured artist
+  founder: Patrick Amadon
+  public_note: Featured artist in the NFT project and publication founded by Patrick Amadon.
+  verification_status: verified
   related_project: null
   featured: false
-  public: false
+  public: true
 
 - id: alt-vision-2024
   title: ALT:VISION Magazine
@@ -89,15 +92,18 @@
   public: true
 
 - id: the-round-2024
-  title: The Round
+  title: THE ROUND
   year: 2024
   city: null
   country: null
   venue: null
-  institution: The Round
-  institution_relationship: needs verification
-  event_type: feature or exhibition
-  role: artist
+  institution: THE ROUND
+  institution_relationship: Threads-native publication
+  event_type: publication feature
+  role: featured artist
+  platform: Threads
+  public_note: Featured artist in the Threads-native publication.
+  verification_status: verified
   related_project: null
   featured: false
-  public: false
+  public: true

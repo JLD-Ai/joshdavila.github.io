@@ -38,4 +38,11 @@ Do not merge into `main` yet unless these are resolved:
 
 1. Confirm the preferred public wording for participation in private DALL-E 3 testing. The record remains non-public until approved.
 2. Verify the relationship descriptions for 404 Arts Foundation and The Round before setting their `public` values to `true`.
-3. Review the generated site visually after the build succeeds.
+
+## Visual QA completed
+
+- Reviewed the generated site at representative desktop and 390 px mobile widths.
+- Covered Home, Works, a flagship project, Writing, Research, Bio, Support, Timeline, Archive, and 404.
+- Confirmed responsive navigation, no horizontal overflow, public-record filtering, metadata, and image loading.
+- Corrected quoted Writing image alt text and verified the generated HTML from commit `d98250c`.
+- Verified the exact Pages artifact digest: `sha256:ae24dbee17a92c6ad26fdb4446c2aa9460d4071ee64742952f3dedb4f4aea7ad`.

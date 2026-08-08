@@ -50,6 +50,7 @@ description: Chronological record of Josh Davila's projects, exhibitions, public
         <strong>{{ exhibition.event_type | capitalize }}:</strong>
         {{ exhibition.title }}
         {% if exhibition.city %}, {{ exhibition.city }}{% endif %}
+        {% if exhibition.public_note %} — {{ exhibition.public_note }}{% endif %}
       </li>
     {% endif %}
   {% endfor %}

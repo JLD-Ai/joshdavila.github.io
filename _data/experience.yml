@@ -10,13 +10,13 @@
 
 - id: dalle3-private-testing
   organization: OpenAI
-  role: Participant in private early testing of DALL-E 3
+  role: DALL-E 3 closed beta participant
   start_date: null
   end_date: null
   status: completed
-  type: private product testing
-  verification_status: approved wording needed
-  public: false
+  type: closed beta product testing
+  verification_status: verified
+  public: true
 
 - id: generative-ai-practice
   organization: Independent

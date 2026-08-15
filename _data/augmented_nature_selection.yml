@@ -1,0 +1,139 @@
+selection_date: "2026-08-15"
+status: curatorial review
+archive_reviewed: 1760
+candidate_finalists: 20
+presentation_count: 14
+hero_sequence:
+  - src: /assets/images/augmented-nature/archive-1525.jpg
+    alt: A luminous pink orb behind a dark plant silhouette
+  - src: /assets/images/augmented-nature/archive-1667.jpg
+    alt: A circular tree-lined opening looking toward a pale landscape
+  - src: /assets/images/augmented-nature/09-crimson-desert.jpg
+    alt: Crimson Desert, a red field with a fragmented face and branching form
+
+chapters:
+  - id: thresholds
+    number: "I"
+    title: Thresholds
+    description: Apertures, moons, and luminous forms turn the landscape into an encounter.
+    theme: night
+    works:
+      - number: "01"
+        title: Archive No. 1525
+        src: /assets/images/augmented-nature/archive-1525.jpg
+        alt: A luminous pink orb behind a dark plant silhouette
+        layout: lead
+        shape: square
+        provenance: Numbered original 1525
+      - number: "02"
+        title: Lunar Bloom
+        src: /assets/images/augmented-nature/03-lunar-bloom.jpg
+        alt: Lunar Bloom, a glowing orb held by branching organic lines above a dark horizon
+        layout: companion
+        shape: portrait
+        provenance: Curated titled work
+      - number: "03"
+        title: Oyster Moon
+        src: /assets/images/augmented-nature/08-oyster-moon.jpg
+        alt: Oyster Moon, a pale shell-like moon beside a dark leafy plant
+        layout: companion
+        shape: portrait
+        provenance: Curated titled work
+      - number: "04"
+        title: Archive No. 1667
+        src: /assets/images/augmented-nature/archive-1667.jpg
+        alt: A circular tree-lined opening looking toward a pale landscape
+        layout: lead
+        shape: square
+        provenance: Numbered original 1667
+
+  - id: fragments
+    number: "II"
+    title: Fragment Ecologies
+    description: Land breaks apart, floats, reflects, and retains the memory of growth.
+    theme: mineral
+    works:
+      - number: "05"
+        title: Archive No. 136
+        src: /assets/images/augmented-nature/archive-136.jpg
+        alt: A small tree reflected across a dark horizontal landform and muted red water
+        layout: panorama
+        shape: landscape
+        provenance: Numbered original 136
+      - number: "06"
+        title: Archive No. 187
+        src: /assets/images/augmented-nature/archive-187.jpg
+        alt: A cracked floating landform with a single red tree against black
+        layout: companion
+        shape: square
+        provenance: Numbered original 187
+      - number: "07"
+        title: Silent Mirage
+        src: /assets/images/augmented-nature/05-silent-mirage.jpg
+        alt: Silent Mirage, a small tree on a suspended desert fragment beneath a luminous cloud
+        layout: lead
+        shape: portrait
+        provenance: Curated titled work; related to numbered original 535
+      - number: "08"
+        title: Floating Memory
+        src: /assets/images/augmented-nature/06-floating-memory.jpg
+        alt: Floating Memory, a suspended textured terrain with two trees
+        layout: panorama
+        shape: landscape
+        provenance: Curated titled work
+
+  - id: networks
+    number: "III"
+    title: Living Networks
+    description: Branch, nerve, figure, and canopy approach a shared visual language.
+    theme: signal
+    works:
+      - number: "09"
+        title: Archive No. 409
+        src: /assets/images/augmented-nature/archive-409.jpg
+        alt: A solitary figure beneath a suspended green branching network
+        layout: lead
+        shape: square
+        provenance: Numbered original 409
+      - number: "10"
+        title: Archive No. 1614
+        src: /assets/images/augmented-nature/archive-1614.jpg
+        alt: A white neuron-like branching organism against a dark red and black field
+        layout: companion
+        shape: square
+        provenance: Numbered original 1614
+      - number: "11"
+        title: Twilight Roots
+        src: /assets/images/augmented-nature/02-twilight-roots.jpg
+        alt: Twilight Roots, dark branches surrounding a luminous organic form
+        layout: panorama
+        shape: portrait
+        provenance: Curated titled work
+
+  - id: red-field
+    number: "IV"
+    title: Red Field
+    description: "The archive closes in heat: contour, branch, body, and atmosphere held in tension."
+    theme: red
+    works:
+      - number: "12"
+        title: Crimson Desert
+        src: /assets/images/augmented-nature/09-crimson-desert.jpg
+        alt: Crimson Desert, a red field with a fragmented face and branching form
+        layout: lead
+        shape: portrait
+        provenance: Curated titled work; related to numbered original 1048
+      - number: "13"
+        title: Archive No. 1741
+        src: /assets/images/augmented-nature/archive-1741.jpg
+        alt: A branching tree intersects cloud apertures and a deep red field
+        layout: companion
+        shape: square
+        provenance: Numbered original 1741
+      - number: "14"
+        title: Ghost Tree
+        src: /assets/images/augmented-nature/11-ghost-tree.jpg
+        alt: Ghost Tree, a solitary tree within a floating blue-gray fragment on white
+        layout: panorama
+        shape: landscape
+        provenance: Curated titled work

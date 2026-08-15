@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | escape }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+  <meta property="og:description" content="{{ page.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <script src="{{ '/assets/js/augmented-nature.js' | relative_url }}" defer></script>
+</head>
+<body class="augmented-nature-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="container augmented-site-header">
+    {% include header.html %}
+  </div>
+
+  <main id="main-content" class="augmented-main" tabindex="-1">
+    <nav class="an-nav" aria-label="Augmented Nature sections">
+      <a class="an-brand" href="#an-top" aria-label="Augmented Nature introduction">A/N <span>Josh Davila</span></a>
+      <div class="an-nav-links">
+        <a href="#an-works">Works</a>
+        <a href="#an-statement">Statement</a>
+        <a href="#an-contact">Contact</a>
+      </div>
+      <span class="an-clock" aria-label="Local time">--:--:--</span>
+    </nav>
+
+    <section class="an-hero" id="an-top">
+      <div class="an-hero-meta">
+        <span>Ongoing post-photographic archive</span>
+        <span>Photography × generative systems</span>
+      </div>
+      <img class="an-hero-artwork" src="{{ page.gallery[0].src | relative_url }}" alt="{{ page.gallery[0].alt }}" fetchpriority="high">
+      <h1>AUGMENTED<span>NATURE</span></h1>
+      <p class="an-hero-statement">Natural photographs, machine interpretation,<br>and the unstable image between them.</p>
+      <a class="an-scroll-cue" href="#an-works"><span>Enter the archive</span><i aria-hidden="true">↓</i></a>
+    </section>
+
+    <section class="an-works" id="an-works" aria-labelledby="an-works-title">
+      <header class="an-section-head">
+        <h2 id="an-works-title">Curated titled works</h2>
+        <span>[ {{ page.gallery | size }} works ]</span>
+      </header>
+      <div class="an-work-grid">
+        {% for work in page.gallery %}
+        <figure class="an-work-card{% if work.feature %} is-featured{% endif %}">
+          <button class="an-visual" type="button"
+                  data-an-image="{{ work.src | relative_url }}"
+                  data-an-title="{{ work.title | escape }}"
+                  data-an-number="{{ work.number }}"
+                  data-an-alt="{{ work.alt | escape }}"
+                  aria-haspopup="dialog" aria-label="View {{ work.title | escape }} enlarged">
+            <img src="{{ work.src | relative_url }}" alt="{{ work.alt }}" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" decoding="async">
+            <span class="an-view-label">View {{ work.number }}</span>
+          </button>
+          <figcaption>
+            <span>{{ work.number }} / Augmented Nature</span>
+            <h3>{{ work.title }}</h3>
+            <span class="an-open-mark" aria-hidden="true">↗</span>
+          </figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="an-manifesto" id="an-statement" aria-labelledby="an-statement-title">
+      <p class="an-eyebrow" id="an-statement-title">Project statement</p>
+      <p class="an-big-copy">Each work begins with <em>photographs of the natural world</em> and digital studies of texture, color, and form.</p>
+      <div class="an-manifesto-foot">{{ content }}</div>
+    </section>
+
+    <section class="an-process" aria-labelledby="an-process-title">
+      <header class="an-section-head an-dark">
+        <h2 id="an-process-title">Image lineage</h2>
+        <span>[ Source to interpretation ]</span>
+      </header>
+      <div class="an-process-line">
+        <span>01</span><strong>Source photographs</strong><i aria-hidden="true">→</i>
+        <span>02</span><strong>Digital studies</strong><i aria-hidden="true">→</i>
+        <span>03</span><strong>Generative interpretation</strong>
+      </div>
+      <p class="an-archive-note">The working archive preserves the source photographs, numbered originals, enhanced variants, and project records behind this selection.</p>
+    </section>
+
+    <section class="an-closing" id="an-contact" aria-labelledby="an-contact-title">
+      <img src="{{ page.gallery[2].src | relative_url }}" alt="{{ page.gallery[2].alt }}" loading="lazy">
+      <p id="an-contact-title">For exhibitions, writing,<br>and collaboration</p>
+      <a href="mailto:jld.art123@gmail.com">Enter the conversation <span aria-hidden="true">↗</span></a>
+      <div class="an-closing-links">
+        <span>Augmented Nature / Josh Davila</span>
+        <a href="https://www.etsy.com/shop/AugmentedEarth" target="_blank" rel="noopener noreferrer">Available prints ↗</a>
+        <a href="#an-top">Return to top ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="container augmented-site-footer">{% include footer.html %}</div>
+
+  <div class="an-overlay" role="dialog" aria-modal="true" aria-labelledby="an-overlay-title" hidden>
+    <div class="an-overlay-panel">
+      <button class="an-close" type="button" aria-label="Close enlarged artwork">×</button>
+      <div class="an-overlay-meta"><span class="an-overlay-number"></span><span>Augmented Nature</span></div>
+      <img class="an-overlay-image" src="" alt="Enlarged artwork view">
+      <div class="an-overlay-caption">
+        <h2 id="an-overlay-title"></h2>
+        <p>Post-photographic image<br>Josh Davila</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

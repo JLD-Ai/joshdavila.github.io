@@ -38,11 +38,11 @@
       url: https://foundation.app/mint/eth/0x546037EB38f30bcF3B4312a7f630c152E41Fd3fe/3
 
 - id: augmented-earth
-  title: Augmented Earth
+  title: Augmented Nature
   slug: augmented-earth
   alternate_titles:
-    - Augmented Nature
-  title_relationship_status: needs verification
+    - Augmented Earth
+  title_relationship_status: current title confirmed by Josh
   status: active
   priority: flagship
   start_year: null
@@ -69,8 +69,8 @@
   central_question: >-
     Can a machine reconstruct nature without also reconstructing human ideas
     about nature?
-  hero_image: augmented/1324.png
-  hero_alt: Artwork from Augmented Earth by Josh Davila
+  hero_image: assets/images/augmented-nature/01-twin-remnants.jpg
+  hero_alt: Twin Remnants from Augmented Nature by Josh Davila
   page_url: /works/augmented-earth/
   external_links:
     - label: Available prints

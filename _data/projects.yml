@@ -72,10 +72,6 @@
   hero_image: assets/images/augmented-nature/archive-1525.jpg
   hero_alt: A luminous pink orb behind a dark plant silhouette, from Augmented Nature by Josh Davila
   page_url: /works/augmented-earth/
-  external_links:
-    - label: Available prints
-      url: https://www.etsy.com/shop/AugmentedEarth
-
 - id: fragments-of-humanity
   title: Fragments of Humanity
   slug: fragments-of-humanity

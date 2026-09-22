@@ -4,6 +4,7 @@ professional:
 direct_support:
   venmo:
     handle: "@JD619Z"
-    url: https://venmo.com/u/JD619Z
   paypal:
-    url: https://www.paypal.com/paypalme/Joshdaviladotart
+    handle: "@Joshdaviladotart"
+  zelle:
+    email: joshl.davila@gmail.com

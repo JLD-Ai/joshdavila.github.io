@@ -1,31 +1,9 @@
-collect:
-  - label: Digital downloads and small support
-    url: https://buymeacoffee.com/n1ftey
-    type: digital
-
 professional:
   email: jld.art123@gmail.com
-  services:
-    - exhibitions
-    - image licensing
-    - commissions
-    - lectures
-    - research collaboration
-    - institutional projects
 
 direct_support:
-  public: true
-  methods:
-    - platform: Venmo
-      handle: "@jd619z"
-      status: needs confirmation
-    - platform: Cash App
-      handle: "$niftyjosh"
-      status: needs confirmation
-    - platform: Ethereum
-      handle: aijosh.eth
-      status: needs confirmation
-    - platform: Tezos
-      handle: aijosh.tez
-      status: needs confirmation
-  wishlist: https://www.amazon.com/hz/wishlist/ls/2G6ADBQN6H285?ref_=wl_share
+  venmo:
+    handle: "@JD619Z"
+    url: https://venmo.com/u/JD619Z
+  paypal:
+    url: https://www.paypal.com/paypalme/Joshdaviladotart

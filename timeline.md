@@ -1,12 +1,12 @@
 ---
 title: Timeline
 permalink: /timeline/
-description: Chronological record of Josh Davila's projects, exhibitions, publications, and professional milestones.
+description: Chronological record of Josh Davila's projects, exhibitions, publications, advocacy, and professional milestones.
 ---
 <section class="hero">
   <p class="eyebrow">Career timeline</p>
   <h1>A chronological record generated from the master data.</h1>
-  <p class="lede">This page expands as records are verified. It is generated from project, writing, exhibition, and experience data rather than edited manually.</p>
+  <p class="lede">This page expands as records are verified. It is generated from project, writing, exhibition, and advocacy milestone data.</p>
 </section>
 
 <section class="section">
@@ -14,6 +14,16 @@ description: Chronological record of Josh Davila's projects, exhibitions, public
 {% for year in years %}
   <h2>{{ year }}</h2>
   <ul class="timeline">
+
+  {% for milestone in site.data.timeline_milestones %}
+    {% assign milestone_year = milestone.year | append: "" %}
+    {% if milestone_year == year %}
+      <li>
+        <strong>{{ milestone.title }}:</strong>
+        {{ milestone.summary }}
+      </li>
+    {% endif %}
+  {% endfor %}
 
   {% for project in site.data.projects %}
     {% assign project_start_year = project.start_year | append: "" %}

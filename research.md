@@ -86,6 +86,6 @@ description: Research on institutional legitimacy, AI ethics, representation, re
 <section class="section callout">
   <p class="eyebrow">Research in practice</p>
   <h2>Housing, records, and the right to question power.</h2>
-  <p>My ongoing work at Casa Lago brings these questions into a place where decisions about rules, data, and remedies affect people's homes.</p>
+  <p>My ongoing housing work brings these questions into a place where decisions about rules, data, and remedies affect people's homes.</p>
   <a class="text-link" href="{{ '/research/housing-and-accountability/' | relative_url }}">Read about the housing inquiry →</a>
 </section>

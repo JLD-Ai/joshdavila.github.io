@@ -6,7 +6,7 @@ description: Josh Davila's ongoing inquiry into housing records, resident voice,
 <section class="hero">
   <p class="eyebrow">Research in practice · 2026</p>
   <h1>When housing records meet lived experience.</h1>
-  <p class="lede">At Casa Lago, my fight to keep my home has become a practical test of a broader question: can people understand and challenge the systems that govern their lives?</p>
+  <p class="lede">My fight to keep my Southern California home has become a practical test of a broader question: can people understand and challenge the systems that govern their lives?</p>
 </section>
 
 <section class="section">

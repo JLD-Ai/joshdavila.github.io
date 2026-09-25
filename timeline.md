@@ -19,7 +19,7 @@ description: Chronological record of Josh Davila's projects, exhibitions, public
     {% assign milestone_year = milestone.year | append: "" %}
     {% if milestone_year == year %}
       <li>
-        <strong>{{ milestone.title }}:</strong>
+        <strong>{% if milestone.page_url %}<a href="{{ milestone.page_url | relative_url }}">{{ milestone.title }}</a>{% else %}{{ milestone.title }}{% endif %}:</strong>
         {{ milestone.summary }}
       </li>
     {% endif %}

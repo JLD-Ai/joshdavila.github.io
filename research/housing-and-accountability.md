@@ -30,6 +30,7 @@ description: Josh Davila's ongoing inquiry into housing records, resident voice,
 <section class="section callout">
   <h2>Technology is part of the housing question</h2>
   <p>Pricing tools, resident portals, screening systems, and security data can shape daily life in housing. I ask who chooses these systems, what they record, who benefits, and how a resident can challenge an error.</p>
+  <p>What cameras are in use, are they all disclosed to residents, and do any systems use facial recognition or other AI-assisted monitoring? At what point does ordinary residential life become surveillance, and who controls what is recorded, kept, shared, or challenged?</p>
 </section>
 
 <section class="section">

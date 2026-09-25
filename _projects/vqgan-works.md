@@ -13,7 +13,7 @@ gallery:
   - src: /vqgan-media/philosopher.jpg
     alt: Philosopher
     caption: Philosopher
-  - src: /vqgan-media/defiance.jpg
+  - src: /vqgan-media/defiance-display.jpg
     alt: Act of Defiance
     caption: Act of Defiance
     full: true

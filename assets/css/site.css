@@ -1071,6 +1071,8 @@ h1 {
 .research-grid { align-items: stretch; }
 .research-card {
   --research-accent: #315b60;
+  display: flex;
+  flex-direction: column;
   position: relative;
   background: linear-gradient(155deg, #f5f7f5 0%, #fff 42%);
   transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease;
@@ -1093,7 +1095,7 @@ h1 {
 .research-card .card-body {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  flex: 1;
   padding: clamp(22px, 3vw, 34px);
 }
 .research-card .card-meta {

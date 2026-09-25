@@ -1171,3 +1171,32 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   .research-card, .research-preview { transition: none; }
 }
+
+
+/* Writing selection */
+.writing-featured {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.writing-featured .card {
+  border-top: 3px solid #315b60;
+  background: var(--panel);
+}
+.writing-featured .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+}
+.writing-featured h3 {
+  margin: 12px 0;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+}
+.writing-featured .card-meta:last-child {
+  margin-top: auto;
+  padding-top: 12px;
+}
+@media (max-width: 760px) {
+  .writing-featured { grid-template-columns: 1fr; }
+}

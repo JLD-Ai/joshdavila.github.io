@@ -30,8 +30,8 @@ layout: default
   {% for item in page.gallery %}
     <figure class="gallery-item {% if item.full %}full{% endif %}">
       {% if item.video %}
-      <video {% if item.controls %}controls{% endif %}
-             loop muted playsinline preload="metadata"
+      <video controls
+             loop muted playsinline preload="none"
              aria-label="{{ item.alt }}">
         <source src="{{ item.src | relative_url }}" type="video/mp4">
       </video>

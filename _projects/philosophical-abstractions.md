@@ -2,9 +2,9 @@
 slug: philosophical-abstractions
 title: Philosophical Abstractions
 description: A 2022 exhibition using early generative systems to visualize logic, fallacies, rules, and philosophical abstractions.
-image: /concept-logic.jpg
+image: /assets/images/concept-logic-display.jpg
 gallery:
-  - src: /concept-logic.jpg
+  - src: /assets/images/concept-logic-display.jpg
     alt: The Concept of Logic by Josh Davila
     caption: The Concept of Logic, 2022
     full: true

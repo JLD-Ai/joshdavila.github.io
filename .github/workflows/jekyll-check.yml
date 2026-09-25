@@ -3,6 +3,7 @@ name: Test structured Jekyll site
 on:
   push:
     branches:
+      - main
       - structured-site
   pull_request:
     branches:

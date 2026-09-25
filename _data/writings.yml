@@ -1,4 +1,5 @@
 - id: case-for-data-ownership
+  site_lead: true
   title: "The Case for Data Ownership: A Moral Imperative"
   publication_date: null
   publication_year: 2025
@@ -37,6 +38,7 @@
   featured: true
 
 - id: unseen-cost-of-ai
+  site_lead: true
   title: "The Unseen Cost of AI: Artists, Exploitation, and the Corporate Dilemma"
   publication_date: 2024-11-26
   publication_year: 2024
@@ -91,7 +93,7 @@
   featured: true
 
 - id: philosophical-abstractions-retrospective
-  title: "Reflecting on Philosophical Abstractions"
+  title: "Revisiting “Philosophical Abstractions,” a 2022 library exhibit made with VQGAN/CLIP and CLIP-guided diffusion"
   publication_date: null
   publication_year: 2023
   status: published
@@ -185,6 +187,7 @@
   featured: false
 
 - id: ethical-disclosure
+  site_lead: true
   title: "The Ethical Imperative of Disclosing the Use of AI in AI-Generated Art"
   publication_date: 2023-05-23
   publication_year: 2023

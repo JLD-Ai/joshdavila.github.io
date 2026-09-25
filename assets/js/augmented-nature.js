@@ -12,6 +12,7 @@
   const previousButton = document.querySelector('.an-overlay-prev');
   const nextButton = document.querySelector('.an-overlay-next');
   const triggers = [...document.querySelectorAll('.an-visual')];
+  const background = [...document.querySelectorAll('.augmented-site-header, .augmented-main, .augmented-site-footer')];
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   let activeSlide = 0;
   let activeWork = 0;
@@ -58,6 +59,7 @@
     opener = triggers[index];
     showArtwork(index);
     overlay.hidden = false;
+    background.forEach((element) => { element.inert = true; });
     document.body.classList.add('an-modal-open');
     closeButton.focus();
   };
@@ -65,6 +67,7 @@
   const closeArtwork = () => {
     if (!overlay || overlay.hidden) return;
     overlay.hidden = true;
+    background.forEach((element) => { element.inert = false; });
     document.body.classList.remove('an-modal-open');
     image.removeAttribute('src');
     if (opener) opener.focus();
@@ -82,6 +85,19 @@
 
   document.addEventListener('keydown', (event) => {
     if (!overlay || overlay.hidden) return;
+    if (event.key === 'Tab') {
+      const focusable = [...overlay.querySelectorAll('button:not([disabled])')];
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+      return;
+    }
     if (event.key === 'Escape') closeArtwork();
     if (event.key === 'ArrowLeft') showArtwork(activeWork - 1);
     if (event.key === 'ArrowRight') showArtwork(activeWork + 1);

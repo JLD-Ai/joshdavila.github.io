@@ -41,3 +41,10 @@ description: Artist, philosopher, veteran, and independent researcher examining 
   {% endfor %}
   </div>
 </section>
+
+<section class="section callout">
+  <p class="eyebrow">Current inquiry</p>
+  <h2>What happens when the questions reach home?</h2>
+  <p>My housing work tests how people can understand the rules, records, and systems that affect their lives—and how they can challenge a decision or verify a remedy.</p>
+  <a class="text-link" href="{{ '/research/housing-and-accountability/' | relative_url }}">Explore housing and accountability →</a>
+</section>

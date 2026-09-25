@@ -40,12 +40,12 @@ description: Research on institutional legitimacy, AI ethics, representation, re
         <details class="research-details">
           <summary>Explore the questions</summary>
           <ol>
-            <li>When does disclosure make an artwork more truthful?</li>
+            <li>How should artists tell audiences when they used AI?</li>
             <li>Who deserves credit when human intention and machine output meet?</li>
             <li>How can audiences assess provenance without losing wonder?</li>
           </ol>
         </details>
-        <p class="research-preview" aria-hidden="true">When does disclosure make an artwork more truthful?</p>
+        <p class="research-preview" aria-hidden="true">How should artists tell audiences when they used AI?</p>
       </div>
     </article>
     <article class="card research-card">
@@ -56,28 +56,28 @@ description: Research on institutional legitimacy, AI ethics, representation, re
         <details class="research-details">
           <summary>Explore the questions</summary>
           <ol>
-            <li>Who creates value when people become training data?</li>
-            <li>What would fair reciprocity look like for artists and testers?</li>
-            <li>Who gets to refuse extraction or negotiate its terms?</li>
+            <li>Who should own the data we create in daily life?</li>
+            <li>When companies profit from our data or creative work, what do they owe us?</li>
+            <li>Should we be able to say no when a company wants to collect or use our data?</li>
           </ol>
         </details>
-        <p class="research-preview" aria-hidden="true">Who creates value when people become training data?</p>
+        <p class="research-preview" aria-hidden="true">Who should own the data we create in daily life?</p>
       </div>
     </article>
     <article class="card research-card">
       <div class="card-body">
-        <p class="card-meta">Institutional epistemology <span aria-hidden="true">/ 04</span></p>
-        <h2>Testimony and contestability</h2>
-        <p>Why official status does not guarantee truth and why affected people need meaningful standing.</p>
+        <p class="card-meta">Institutions and evidence <span aria-hidden="true">/ 04</span></p>
+        <h2>Whose account counts?</h2>
+        <p>How institutions record people's experiences, make decisions, and respond when someone disputes the record.</p>
         <details class="research-details">
           <summary>Explore the questions</summary>
           <ol>
-            <li>Whose testimony survives when an institution controls the record?</li>
-            <li>What would it take to correct a harmful official classification?</li>
-            <li>How can affected people test whether a promised remedy worked?</li>
+            <li>When an official record and a person's account differ, who gets believed?</li>
+            <li>How can someone correct a record that gets the facts wrong?</li>
+            <li>How do we know whether an institution actually fixed a problem?</li>
           </ol>
         </details>
-        <p class="research-preview" aria-hidden="true">Whose testimony survives when an institution controls the record?</p>
+        <p class="research-preview" aria-hidden="true">When an official record and a person's account differ, who gets believed?</p>
       </div>
     </article>
   </div>

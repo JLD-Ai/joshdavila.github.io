@@ -15,6 +15,10 @@ description: Josh Davila's ongoing inquiry into housing records, resident voice,
     <div>
       <h3>Who knows the rules?</h3>
       <p>Residents need rules they can find and understand, and a meaningful way to ask how a decision was made.</p>
+      <ul>
+        <li>How can residents be held accountable for rules that are unwritten, unclear, or hard to find?</li>
+        <li>If residents experience different enforcement, what records would let them tell whether decisions are consistent and fair across the property?</li>
+      </ul>
     </div>
     <div>
       <h3>What counts as a remedy?</h3>

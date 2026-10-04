@@ -12,9 +12,8 @@ description: Work with Josh Davila or directly support his independent art, writ
   <div class="support-grid">
     <div class="support-card">
       <h2>Work with Josh</h2>
-      <p>I offer individual instruction and practical guidance for people who want to use AI more effectively in creative work, research, organization, advocacy, or everyday problem-solving.</p>
-      <p>Professional inquiries are also welcome for commissions, image licensing, lectures, exhibitions, research collaboration, and institutional projects.</p>
-      <a class="text-link" href="mailto:{{ site.data.support.professional.email }}">{{ site.data.support.professional.email }}</a>
+      <p>My work includes helping people use AI in creative work, research, organization, advocacy, and everyday problem-solving. I have also worked on commissions, image licensing, lectures, exhibitions, research collaborations, and institutional projects.</p>
+      <p>I'm not taking on new AI work right now while I focus on my housing situation. <a class="text-link" href="{{ '/research/housing-and-accountability/' | relative_url }}">Read about my housing and accountability work</a>.</p>
     </div>
     <div class="support-card">
       <h2>Direct support</h2>

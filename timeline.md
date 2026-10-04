@@ -21,6 +21,7 @@ description: Chronological record of Josh Davila's projects, exhibitions, public
       <li>
         <strong>{% if milestone.page_url %}<a href="{{ milestone.page_url | relative_url }}">{{ milestone.title }}</a>{% else %}{{ milestone.title }}{% endif %}:</strong>
         {{ milestone.summary }}
+        {% if milestone.articles_url %}<a href="{{ milestone.articles_url }}" target="_blank" rel="noopener noreferrer">Read my housing essays on Medium</a>{% endif %}
       </li>
     {% endif %}
   {% endfor %}

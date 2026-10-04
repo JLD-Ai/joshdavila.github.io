@@ -37,7 +37,7 @@ description: Josh Davila's ongoing inquiry into housing records, resident voice,
   <h2>How I approach the work</h2>
   <p>I separate what I observed, what a document records, what an institution says, what I infer, and what remains unanswered. I do not treat a reported concern as a proven violation or a closed file as proof that a condition was fixed. Neighbors' experiences belong to them; sharing them requires care and consent.</p>
   <p>This is an introduction to an ongoing inquiry, not a comprehensive case file. Its purpose is to connect the questions in my research to a place where they have immediate consequences.</p>
-  <p>My published essays follow city complaint records, water and pool oversight, and utility billing as the evidence develops.</p>
+  <p>My published essays follow management and city and county responses, including questions the records have yet to answer.</p>
   <div class="link-row">
     <a class="button" href="https://medium.com/@joshdavila.art" target="_blank" rel="noopener noreferrer">Read my housing essays on Medium</a>
     <a class="button" href="{{ '/research/' | relative_url }}">Explore the research questions</a>

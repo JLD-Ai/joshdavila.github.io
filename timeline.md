@@ -20,8 +20,8 @@ description: Chronological record of Josh Davila's projects, exhibitions, public
     {% if milestone_year == year %}
       <li>
         <strong>{% if milestone.page_url %}<a href="{{ milestone.page_url | relative_url }}">{{ milestone.title }}</a>{% else %}{{ milestone.title }}{% endif %}:</strong>
-        {{ milestone.summary }}
-        {% if milestone.articles_url %}<a href="{{ milestone.articles_url }}" target="_blank" rel="noopener noreferrer">Read my housing essays on Medium</a>{% endif %}
+        <p>{{ milestone.summary }}</p>
+        {% if milestone.detail %}<p>{{ milestone.detail }} {% if milestone.articles_url %}<a href="{{ milestone.articles_url }}" target="_blank" rel="noopener noreferrer">Read my essays on Medium.</a>{% endif %}</p>{% endif %}
       </li>
     {% endif %}
   {% endfor %}
